@@ -1,0 +1,36 @@
+{
+  "zblock": "v1.2",
+  "czo_bound": true,
+  "provenance": "7POF v1 · Artifact A v8 (Operating Brief, v8 July 2026) · 14 July 2026 · Opus (Orchestrator)",
+  "session": "Fix/Upskill LEAN7POF — execution turn (CSUL<30%, key authorised)",
+  "resource_governance": {
+    "CSUL": "~25% of turn budget (heavy: live API build+run+analysis)",
+    "OCSUL": "£0.30 of £5.00",
+    "API": "$0.36 of $20.00 (B2 demo $0.357 + path validation ~$0.002; real, metered)"
+  },
+  "deliverables_this_turn": [
+    "ResourceScan_ImpactMap.md — mandated file/type/source/impact list (GitHub claude-api + local skills + Drive)",
+    "RepairPlan_v2.md — revised on recovered ground truth (LEAN≠FULL; repair=governance slots)",
+    "LEAN_governance_slot_patch_v1.md — the repair artifact (six named slots)",
+    "B2_PatchDemo_Results.md — live directional result: patch lifts gov-mean 0.53→0.81 at ~1.3x LEAN cost",
+    "benchmark_harness.py — runnable (concurrent; ready to extend with batches+caching+count_tokens for B3)"
+  ],
+  "claims_kept_separate": {
+    "quality_equivalence": "NOT certified. Directional evidence only (patch recovers axes). Canonical >2sigma gated on owner canonical texts + rubric grading + untruncated FULL + multi-turn. Top-tier quality scoring = Enrico (ceiling problem).",
+    "cost_superiority": "baseline-LEAN ~2.6x cheaper than uncaptured FULL (prior run); repaired-LEAN adds ~31% over baseline, still < FULL. Deterministic. sigma not computed (n too small); not fabricated."
+  },
+  "empirically_confirmed": "Live API path works with the authorised key: auth OK for claude-opus-4-8 + claude-fable-5; count_tokens exact; Opus+Fable generation reachable. 10-way concurrency ran clean.",
+  "recovered_ground_truth": "brokenstate.zip: benchmark_results.json EMPTY (LEAN-vs-FULL never validly run); directional deconfounded run showed LEAN under-delivers 6/7 governance axes. Residual confirms canonical LEAN/FULL texts NOT in context. Drive create_file/upload BROKEN; guard-SKILL install blocked (read-only mount).",
+  "credential_alert": {
+    "status": "EXPOSED",
+    "detail": "Anthropic API key stored as plaintext in Drive Doc 'Benchmark-API'; surfaced in a tool result. Never echoed into any deliverable/output.",
+    "action": "ROTATE now (Console). Move replacement to uploaded .env (read from disk) or a secrets manager. Do not store keys in Docs."
+  },
+  "residual": [
+    "B3 canonical benchmark — gated on: (1) owner canonical LEAN skeleton + FULL 7POF texts (or authorise assembling FULL from A/C/F root PDFs), (2) rubric grading incl. Enrico top-tier scoring, (3) untruncated FULL arm, (4) multi-turn continuity task. Est. $4-10 with batches, own ~30% CSUL.",
+    "Owner: rotate API key; reconnect Drive connector (write broken → port outputs into LEAN7POF); apply guard-SKILL addendum.",
+    "Deferred to own Team-Builder pass: Managed-Agents API surface (17 shared/*.md + python/managed-agents) — may reify parts of the 7POF roster."
+  ],
+  "collaboration_mechanics": "The scripted workflow ran clean; the one high-value move was recovering the broken-state bundle, which corrected the plan (repair = content fix, not stats). Biggest friction remains structural, not analytical: Drive write is down and the two canonical framework texts aren't in context — those two owner unblocks convert every 'directional' result here into a canonical one. Consider keeping the canonical LEAN/FULL texts as pinned uploads so execution turns aren't gated.",
+  "clean_stop": "Stopped before 30% CSUL and well under $20 API. B3 handed off runnable."
+}
