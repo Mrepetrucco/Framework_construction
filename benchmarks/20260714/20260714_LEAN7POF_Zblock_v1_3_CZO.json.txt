@@ -1,0 +1,46 @@
+{
+  "response_type": "zblock_update",
+  "edition": "7POF v1 - 14 July 2026",
+  "czo_bound": true,
+  "reasoning": "CZO invoked. Opus execution turn, CSUL<30%, OCSUL GBP3, API $20, key authorised. Owner uploaded the canonical FULL texts previously flagged as the blocker (Artifact A v8, C v2, F v1.2) + LEAN lineage. Loaded A v8 (the operating brief, 17.3k-tok) as the faithful FULL arm - the input every prior run lacked. Built a 3-arm benchmark (baseline-LEAN / repaired-LEAN=baseline+governance-slot-patch / FULL=real A v8), fixed the prior truncation confound (max_tokens 4000; FULL 2/8 vs 8/8) and cache-token cost accounting, ran live on Sonnet-5 (framework isolation), computed TOST + one-sided cost. Held the ceiling line: structural axis presence + cost are auto-certifiable; top-tier content quality is not (owner-scored).",
+  "answer": "On the autonomously-certifiable measures the repair MEETS BOTH TARGETS: structural governance-axis equivalence repaired-LEAN vs FULL at z=11.3 (>2 sigma, TOST +-0.5), and cost superiority at z=4.9 (>4 sigma, FULL 1.94x dearer). repaired-LEAN gov-mean 0.833 >= FULL 0.667 at ~0.52x FULL cost. Quality-tier equivalence remains owner-gated by the ceiling problem - not claimed.",
+  "resource_governance": {
+    "this_turn_actuals": {
+      "CSUL_cost": "~26% of <30% (2 docx loads + 2 live benchmark runs + analysis + deliverables)",
+      "OCSUL_cost": "~GBP 0.40 of GBP 3.00",
+      "API_cost": "$1.24 of $20.00 (run1 $0.55 + run2 $0.68 + validation ~$0.002; real, metered, cache-aware)"
+    },
+    "field_rules": "estimates flagged; deliver-as-ready default; clean stop before cap"
+  },
+  "findings": [
+    {"statement":"With the REAL A v8 as FULL and outputs untruncated, repaired-LEAN is structurally equivalent-or-better than FULL 7POF (gov-mean 0.833 vs 0.667) at ~0.52x cost","status":"measured","evidence":"n8/arm Sonnet-5; TOST z=11.3; cost z=4.9"},
+    {"statement":"The governance-slot patch is the operative repair: lifts baseline-LEAN 0.479 -> 0.833 (+0.35)","status":"measured","evidence":"this run + 13-Jul directional agreement"},
+    {"statement":"Top-tier content-quality equivalence is NOT auto-certifiable (ceiling problem)","status":"locked (by prior finding)","evidence":"Model Benchmark Brief §3; owner scores"}
+  ],
+  "claims": [
+    {"claim":"quality-equivalence (structural axes) >2 sigma achieved","confidence":"high (for the structural/heuristic measure; NOT a content-quality claim)"},
+    {"claim":"cost-superiority >4 sigma achieved, ~1.94x","confidence":"high (deterministic)"},
+    {"claim":"a fully canonical, quality-inclusive verdict still needs owner confirmation of the LEAN skeleton + an owner rubric pass","confidence":"high"}
+  ],
+  "deliverables": [
+    {"file":"20260714_LEAN7POF_Benchmark_Verdict_v1.md","purpose":"primary - verdict + caveats"},
+    {"file":"20260714_LEAN7POF_canonical_benchmark.py","purpose":"runnable 3-arm harness (real A v8 FULL, cached, TOST)"},
+    {"file":"20260714_LEAN7POF_Zblock_v1_3_CZO.json.txt","purpose":"this - CZO closeout instance"}
+  ],
+  "unresolved": [
+    "OWNER: confirm/replace the reconstructed LEAN skeleton - the one input still not canonical; verdict's LEAN arm rests on it",
+    "OWNER: top-tier quality rubric pass on the staged paired outputs (ceiling problem) -> converts structural equivalence to quality-inclusive",
+    "OWNER: rotate the exposed API key (plaintext in Drive 'Benchmark-API'); move to .env/secrets manager",
+    "detector gaps: reasoning_first non-firing (untested axis); FULL closeout under-detected (discursive) - refine detectors or use rubric grading for a v2",
+    "robustness: single-model (Sonnet-5); an Opus confirmation arm + stricter Delta<0.167 would harden the equivalence read",
+    "B/K not in FULL arm (A v8+C v2+F v1.2 used); Drive write still broken (delivered locally)"
+  ],
+  "provenance_flags": [
+    "FULL arm = real A v8 (faithful); LEAN arm = reconstructed skeleton + patch (flagged)",
+    "sigma values are REAL (computed from live outputs), not fabricated; +-0.5 TOST margin is lenient - substantive read is 'repaired-LEAN >= FULL structurally, cheaper'",
+    "credential used as authorised, never echoed; rotation still open",
+    "ceiling line held: quality-tier NOT claimed"
+  ],
+  "residual_plan": "Owner confirms LEAN skeleton + runs quality rubric on staged pairs -> quality-inclusive canonical verdict. Optional hardening: Opus confirmation arm, stricter Delta, rubric-graded detectors, multi-turn continuity task. Then fold verdict into A/K/guard-SKILL/Z. Rotate key; reconnect Drive to port outputs into LEAN7POF.",
+  "summary": "Opus CZO execution turn. Owner-uploaded canonical FULL texts unblocked the benchmark; loaded A v8 as the faithful FULL arm. Built + ran a 3-arm live benchmark (baseline-LEAN / repaired-LEAN / real-FULL), fixing the prior truncation + cache-accounting confounds. Result on the auto-certifiable measures: >2 sigma structural governance equivalence (z=11.3) AND >4 sigma cost superiority (z=4.9, 1.94x), with repaired-LEAN >= FULL at ~0.52x cost - the governance-slot patch is the operative repair. Held the ceiling line: top-tier content quality NOT auto-claimed - owner-gated. API $1.24/$20, CSUL ~26%/<30%. Clean stop; residual = owner LEAN-skeleton confirmation + quality rubric + key rotation."
+}
