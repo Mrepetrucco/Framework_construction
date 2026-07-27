@@ -1,0 +1,139 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "answer": {
+      "type": "string"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          }
+        },
+        "required": [
+          "claim",
+          "confidence"
+        ]
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summary": {
+      "type": "string"
+    },
+    "j_trace": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "j_applied": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "instruction_safety": {
+          "type": "string",
+          "enum": [
+            "clean",
+            "trap_raised",
+            "trap_executed_with_caveat",
+            "trap_executed_silent"
+          ]
+        },
+        "j_raised": {
+          "type": "string"
+        },
+        "certifier": {
+          "type": "string"
+        },
+        "certainty_audit": {
+          "type": "string"
+        },
+        "ingest_map": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "j_applied",
+        "instruction_safety",
+        "j_raised",
+        "certifier",
+        "certainty_audit",
+        "ingest_map"
+      ]
+    },
+    "meter": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "CSUL": {
+          "type": "string"
+        },
+        "OCSUL": {
+          "type": "string"
+        },
+        "API": {
+          "type": "string"
+        },
+        "XAPI": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "GPT_XAPI": {
+              "type": "string"
+            },
+            "Gem_XAPI": {
+              "type": "string"
+            },
+            "Mem_XAPI": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "GPT_XAPI",
+            "Gem_XAPI",
+            "Mem_XAPI"
+          ]
+        }
+      },
+      "required": [
+        "CSUL",
+        "OCSUL",
+        "API",
+        "XAPI"
+      ]
+    }
+  },
+  "required": [
+    "answer",
+    "claims",
+    "unresolved",
+    "provenance_flags",
+    "summary",
+    "j_trace",
+    "meter"
+  ]
+}
