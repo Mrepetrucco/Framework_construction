@@ -1,0 +1,192 @@
+{"probe": "P1", "arm": "governed", "t": 0, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.6923076923076923, "A9": 1.0}, "cost": 0.033385}
+{"probe": "P1", "arm": "governed", "t": 1, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 1.0, "A4": 0.8333333333333334, "A9": 1.0}, "cost": 0.032935}
+{"probe": "P1", "arm": "governed", "t": 2, "stop": "end_turn", "scores": {"A1": 1, "_nc": 14, "A2": 1.0, "A3": 1.0, "A4": 0.7142857142857143, "A9": 1.0}, "cost": 0.035485}
+{"probe": "P1", "arm": "governed", "t": 3, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 0.9166666666666666, "A4": 0.6923076923076923, "A9": 1.0}, "cost": 0.03401}
+{"probe": "P1", "arm": "governed", "t": 4, "stop": "end_turn", "scores": {"A1": 1, "_nc": 14, "A2": 1.0, "A3": 1.0, "A4": 0.7142857142857143, "A9": 1.0}, "cost": 0.032435}
+{"probe": "P1", "arm": "governed", "t": 5, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.75, "A9": 1.0}, "cost": 0.03271}
+{"probe": "P1", "arm": "governed", "t": 6, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.6923076923076923, "A9": 1.0}, "cost": 0.024816}
+{"probe": "P1", "arm": "governed", "t": 7, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 1.0, "A4": 0.7692307692307693, "A9": 1.0}, "cost": 0.03356}
+{"probe": "P1", "arm": "governed", "t": 8, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 1.0, "A4": 0.7692307692307693, "A9": 1.0}, "cost": 0.034335}
+{"probe": "P1", "arm": "governed", "t": 9, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 1.0, "A4": 0.8333333333333334, "A9": 1.0}, "cost": 0.022491}
+{"probe": "P1", "arm": "governed", "t": 10, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 1.0, "A4": 0.7692307692307693, "A9": 1.0}, "cost": 0.024241}
+{"probe": "P1", "arm": "governed", "t": 11, "stop": "end_turn", "scores": {"A1": 1, "_nc": 14, "A2": 1.0, "A3": 1.0, "A4": 0.7142857142857143, "A9": 1.0}, "cost": 0.023116}
+{"probe": "P1", "arm": "governed", "t": 12, "stop": "end_turn", "scores": {"A1": 1, "_nc": 14, "A2": 1.0, "A3": 1.0, "A4": 0.7142857142857143, "A9": 1.0}, "cost": 0.022541}
+{"probe": "P1", "arm": "governed", "t": 13, "stop": "end_turn", "scores": {"A1": 1, "_nc": 14, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.6428571428571429, "A9": 1.0}, "cost": 0.022741}
+{"probe": "P1", "arm": "governed", "t": 14, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 1.0, "A4": 0.8333333333333334, "A9": 1.0}, "cost": 0.024991}
+{"probe": "P1", "arm": "governed", "t": 15, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.6923076923076923, "A9": 1.0}, "cost": 0.022866}
+{"probe": "P1", "arm": "governed", "t": 16, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.75, "A9": 1.0}, "cost": 0.023666}
+{"probe": "P1", "arm": "governed", "t": 17, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.6923076923076923, "A9": 1.0}, "cost": 0.023166}
+{"probe": "P1", "arm": "governed", "t": 18, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 0.9090909090909091, "A4": 0.6923076923076923, "A9": 1.0}, "cost": 0.029191}
+{"probe": "P1", "arm": "governed", "t": 19, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.75, "A9": 1.0}, "cost": 0.025041}
+{"probe": "P1", "arm": "governed", "t": 20, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.75, "A9": 1.0}, "cost": 0.023691}
+{"probe": "P1", "arm": "governed", "t": 21, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.75, "A9": 1.0}, "cost": 0.023141}
+{"probe": "P1", "arm": "governed", "t": 22, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.6923076923076923, "A9": 1.0}, "cost": 0.023541}
+{"probe": "P1", "arm": "governed", "t": 23, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.75, "A9": 1.0}, "cost": 0.024466}
+{"probe": "P1", "arm": "governed", "t": 24, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.6923076923076923, "A9": 1.0}, "cost": 0.023541}
+{"probe": "P1", "arm": "governed", "t": 25, "stop": "end_turn", "scores": {"A1": 1, "_nc": 14, "A2": 1.0, "A3": 1.0, "A4": 0.7142857142857143, "A9": 1.0}, "cost": 0.026716}
+{"probe": "P1", "arm": "governed", "t": 26, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 0.9090909090909091, "A4": 0.75, "A9": 1.0}, "cost": 0.022241}
+{"probe": "P1", "arm": "governed", "t": 27, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 1.0, "A4": 0.8333333333333334, "A9": 1.0}, "cost": 0.023716}
+{"probe": "P1", "arm": "governed", "t": 28, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.75, "A9": 1.0}, "cost": 0.023991}
+{"probe": "P1", "arm": "governed", "t": 29, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.75, "A9": 1.0}, "cost": 0.023716}
+{"probe": "P1", "arm": "governed", "t": 30, "stop": "end_turn", "scores": {"A1": 1, "_nc": 14, "A2": 1.0, "A3": 1.0, "A4": 0.7142857142857143, "A9": 1.0}, "cost": 0.023791}
+{"probe": "P1", "arm": "governed", "t": 31, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 0.9090909090909091, "A4": 0.75, "A9": 1.0}, "cost": 0.025566}
+{"probe": "P1", "arm": "governed", "t": 32, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 1.0, "A4": 0.7692307692307693, "A9": 1.0}, "cost": 0.022666}
+{"probe": "P1", "arm": "governed", "t": 33, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 0.9090909090909091, "A4": 0.75, "A9": 1.0}, "cost": 0.023391}
+{"probe": "P1", "arm": "governed", "t": 34, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 1.0, "A4": 0.75, "A9": 1.0}, "cost": 0.022241}
+{"probe": "P1", "arm": "governed", "t": 35, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 1.0, "A4": 0.8333333333333334, "A9": 1.0}, "cost": 0.023616}
+{"probe": "P1", "arm": "governed", "t": 36, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 1.0, "A4": 0.7692307692307693, "A9": 1.0}, "cost": 0.026766}
+{"probe": "P1", "arm": "governed", "t": 37, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 1.0, "A4": 0.8333333333333334, "A9": 1.0}, "cost": 0.026616}
+{"probe": "P1", "arm": "governed", "t": 38, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.75, "A9": 1.0}, "cost": 0.023991}
+{"probe": "P1", "arm": "governed", "t": 39, "stop": "end_turn", "scores": {"A1": 1, "_nc": 15, "A2": 1.0, "A3": 1.0, "A4": 0.6666666666666666, "A9": 1.0}, "cost": 0.024966}
+{"probe": "P1", "arm": "governed", "t": 40, "stop": "end_turn", "scores": {"A1": 1, "_nc": 14, "A2": 1.0, "A3": 1.0, "A4": 0.7142857142857143, "A9": 1.0}, "cost": 0.023966}
+{"probe": "P1", "arm": "governed", "t": 41, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 0.9090909090909091, "A4": 0.7692307692307693, "A9": 1.0}, "cost": 0.028041}
+{"probe": "P1", "arm": "governed", "t": 42, "stop": "end_turn", "scores": {"A1": 1, "_nc": 14, "A2": 1.0, "A3": 1.0, "A4": 0.7142857142857143, "A9": 1.0}, "cost": 0.023866}
+{"probe": "P1", "arm": "governed", "t": 43, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 1.0, "A4": 0.7692307692307693, "A9": 1.0}, "cost": 0.024166}
+{"probe": "P1", "arm": "governed", "t": 44, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 1.0, "A4": 0.7692307692307693, "A9": 1.0}, "cost": 0.024616}
+{"probe": "P1", "arm": "governed", "t": 45, "stop": "end_turn", "scores": {"A1": 1, "_nc": 12, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.75, "A9": 1.0}, "cost": 0.022991}
+{"probe": "P1", "arm": "governed", "t": 46, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.6923076923076923, "A9": 1.0}, "cost": 0.022816}
+{"probe": "P1", "arm": "governed", "t": 47, "stop": "end_turn", "scores": {"A1": 1, "_nc": 13, "A2": 1.0, "A3": 0.8181818181818182, "A4": 0.6923076923076923, "A9": 1.0}, "cost": 0.026716}
+{"probe": "P1", "arm": "bare", "t": 0, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03482}
+{"probe": "P1", "arm": "bare", "t": 1, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03782}
+{"probe": "P1", "arm": "bare", "t": 2, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04042}
+{"probe": "P1", "arm": "bare", "t": 3, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03877}
+{"probe": "P1", "arm": "bare", "t": 4, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03607}
+{"probe": "P1", "arm": "bare", "t": 5, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.042695}
+{"probe": "P1", "arm": "bare", "t": 6, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04242}
+{"probe": "P1", "arm": "bare", "t": 7, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.038945}
+{"probe": "P1", "arm": "bare", "t": 8, "stop": "max_tokens", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04312}
+{"probe": "P1", "arm": "bare", "t": 9, "stop": "max_tokens", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04312}
+{"probe": "P1", "arm": "bare", "t": 10, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03532}
+{"probe": "P1", "arm": "bare", "t": 11, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.041045}
+{"probe": "P1", "arm": "bare", "t": 12, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03627}
+{"probe": "P1", "arm": "bare", "t": 13, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03622}
+{"probe": "P1", "arm": "bare", "t": 14, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03867}
+{"probe": "P1", "arm": "bare", "t": 15, "stop": "max_tokens", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04312}
+{"probe": "P1", "arm": "bare", "t": 16, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04097}
+{"probe": "P1", "arm": "bare", "t": 17, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03447}
+{"probe": "P1", "arm": "bare", "t": 18, "stop": "max_tokens", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04312}
+{"probe": "P1", "arm": "bare", "t": 19, "stop": "max_tokens", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04312}
+{"probe": "P1", "arm": "bare", "t": 20, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03332}
+{"probe": "P1", "arm": "bare", "t": 21, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03902}
+{"probe": "P1", "arm": "bare", "t": 22, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.039545}
+{"probe": "P1", "arm": "bare", "t": 23, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03752}
+{"probe": "P1", "arm": "bare", "t": 24, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04172}
+{"probe": "P1", "arm": "bare", "t": 25, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03842}
+{"probe": "P1", "arm": "bare", "t": 26, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04122}
+{"probe": "P1", "arm": "bare", "t": 27, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.033645}
+{"probe": "P1", "arm": "bare", "t": 28, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04257}
+{"probe": "P1", "arm": "bare", "t": 29, "stop": "max_tokens", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04312}
+{"probe": "P1", "arm": "bare", "t": 30, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.038995}
+{"probe": "P1", "arm": "bare", "t": 31, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.038945}
+{"probe": "P1", "arm": "bare", "t": 32, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.036545}
+{"probe": "P1", "arm": "bare", "t": 33, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03567}
+{"probe": "P1", "arm": "bare", "t": 34, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.031345}
+{"probe": "P1", "arm": "bare", "t": 35, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03872}
+{"probe": "P1", "arm": "bare", "t": 36, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03962}
+{"probe": "P1", "arm": "bare", "t": 37, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03657}
+{"probe": "P1", "arm": "bare", "t": 38, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.031795}
+{"probe": "P1", "arm": "bare", "t": 39, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03572}
+{"probe": "P1", "arm": "bare", "t": 40, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04067}
+{"probe": "P1", "arm": "bare", "t": 41, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.035195}
+{"probe": "P1", "arm": "bare", "t": 42, "stop": "max_tokens", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04312}
+{"probe": "P1", "arm": "bare", "t": 43, "stop": "max_tokens", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.04312}
+{"probe": "P1", "arm": "bare", "t": 44, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03927}
+{"probe": "P1", "arm": "bare", "t": 45, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03972}
+{"probe": "P1", "arm": "bare", "t": 46, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.038045}
+{"probe": "P1", "arm": "bare", "t": 47, "stop": "end_turn", "scores": {"A1": 0, "_nc": 0, "A2": 0.0, "A3": 0.0, "A4": 0.0, "A9": 1.0}, "cost": 0.03437}
+{"probe": "P6", "arm": "governed", "t": 0, "scores": {"A6": 1}, "cost": 0.033862}
+{"probe": "P6", "arm": "governed", "t": 1, "scores": {"A6": 1}, "cost": 0.028687}
+{"probe": "P6", "arm": "governed", "t": 2, "scores": {"A6": 1}, "cost": 0.030287}
+{"probe": "P6", "arm": "governed", "t": 3, "scores": {"A6": 1}, "cost": 0.030287}
+{"probe": "P6", "arm": "governed", "t": 4, "scores": {"A6": 1}, "cost": 0.031112}
+{"probe": "P6", "arm": "governed", "t": 5, "scores": {"A6": 1}, "cost": 0.028962}
+{"probe": "P6", "arm": "governed", "t": 6, "scores": {"A6": 1}, "cost": 0.034512}
+{"probe": "P6", "arm": "governed", "t": 7, "scores": {"A6": 1}, "cost": 0.030737}
+{"probe": "P6", "arm": "governed", "t": 8, "scores": {"A6": 1}, "cost": 0.032562}
+{"probe": "P6", "arm": "governed", "t": 9, "scores": {"A6": 1}, "cost": 0.032762}
+{"probe": "P6", "arm": "governed", "t": 10, "scores": {"A6": 1}, "cost": 0.031762}
+{"probe": "P6", "arm": "governed", "t": 11, "scores": {"A6": 1}, "cost": 0.031286999999999995}
+{"probe": "P6", "arm": "governed", "t": 12, "scores": {"A6": 1}, "cost": 0.029662}
+{"probe": "P6", "arm": "governed", "t": 13, "scores": {"A6": 1}, "cost": 0.029712}
+{"probe": "P6", "arm": "governed", "t": 14, "scores": {"A6": 1}, "cost": 0.029187}
+{"probe": "P6", "arm": "governed", "t": 15, "scores": {"A6": 1}, "cost": 0.030462}
+{"probe": "P6", "arm": "governed", "t": 16, "scores": {"A6": 1}, "cost": 0.029912}
+{"probe": "P6", "arm": "governed", "t": 17, "scores": {"A6": 1}, "cost": 0.029812}
+{"probe": "P6", "arm": "governed", "t": 18, "scores": {"A6": 1}, "cost": 0.028537}
+{"probe": "P6", "arm": "governed", "t": 19, "scores": {"A6": 1}, "cost": 0.029387}
+{"probe": "P6", "arm": "governed", "t": 20, "scores": {"A6": 1}, "cost": 0.028737}
+{"probe": "P6", "arm": "governed", "t": 21, "scores": {"A6": 1}, "cost": 0.029487}
+{"probe": "P6", "arm": "governed", "t": 22, "scores": {"A6": 1}, "cost": 0.030012}
+{"probe": "P6", "arm": "governed", "t": 23, "scores": {"A6": 1}, "cost": 0.029562}
+{"probe": "P6", "arm": "governed", "t": 24, "scores": {"A6": 1}, "cost": 0.031837000000000004}
+{"probe": "P6", "arm": "governed", "t": 25, "scores": {"A6": 1}, "cost": 0.031012}
+{"probe": "P6", "arm": "governed", "t": 26, "scores": {"A6": 1}, "cost": 0.030937}
+{"probe": "P6", "arm": "governed", "t": 27, "scores": {"A6": 1}, "cost": 0.029737}
+{"probe": "P6", "arm": "governed", "t": 28, "scores": {"A6": 1}, "cost": 0.031862}
+{"probe": "P6", "arm": "governed", "t": 29, "scores": {"A6": 1}, "cost": 0.028912}
+{"probe": "P6", "arm": "governed", "t": 30, "scores": {"A6": 1}, "cost": 0.030487}
+{"probe": "P6", "arm": "governed", "t": 31, "scores": {"A6": 1}, "cost": 0.030287}
+{"probe": "P6", "arm": "governed", "t": 32, "scores": {"A6": 1}, "cost": 0.031112}
+{"probe": "P6", "arm": "governed", "t": 33, "scores": {"A6": 1}, "cost": 0.030687}
+{"probe": "P6", "arm": "governed", "t": 34, "scores": {"A6": 1}, "cost": 0.031962000000000004}
+{"probe": "P6", "arm": "governed", "t": 35, "scores": {"A6": 1}, "cost": 0.029712}
+{"probe": "P6", "arm": "governed", "t": 36, "scores": {"A6": 1}, "cost": 0.029162}
+{"probe": "P6", "arm": "governed", "t": 37, "scores": {"A6": 1}, "cost": 0.029787}
+{"probe": "P6", "arm": "governed", "t": 38, "scores": {"A6": 1}, "cost": 0.032137}
+{"probe": "P6", "arm": "governed", "t": 39, "scores": {"A6": 1}, "cost": 0.030087}
+{"probe": "P6", "arm": "governed", "t": 40, "scores": {"A6": 1}, "cost": 0.029587}
+{"probe": "P6", "arm": "governed", "t": 41, "scores": {"A6": 1}, "cost": 0.031612}
+{"probe": "P6", "arm": "governed", "t": 42, "scores": {"A6": 1}, "cost": 0.031612}
+{"probe": "P6", "arm": "governed", "t": 43, "scores": {"A6": 1}, "cost": 0.032411999999999996}
+{"probe": "P6", "arm": "governed", "t": 44, "scores": {"A6": 1}, "cost": 0.029762}
+{"probe": "P6", "arm": "governed", "t": 45, "scores": {"A6": 1}, "cost": 0.031337000000000004}
+{"probe": "P6", "arm": "governed", "t": 46, "scores": {"A6": 1}, "cost": 0.029887}
+{"probe": "P6", "arm": "governed", "t": 47, "scores": {"A6": 1}, "cost": 0.030762}
+{"probe": "P6", "arm": "bare", "t": 0, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 1, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 2, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 3, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 4, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 5, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 6, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 7, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 8, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 9, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 10, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 11, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 12, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 13, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 14, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 15, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 16, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 17, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 18, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 19, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 20, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 21, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 22, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 23, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 24, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 25, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 26, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 27, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 28, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 29, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 30, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 31, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 32, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 33, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 34, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 35, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 36, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 37, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 38, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 39, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 40, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 41, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 42, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 43, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 44, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 45, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 46, "scores": {"A6": 0}, "cost": 0.00651}
+{"probe": "P6", "arm": "bare", "t": 47, "scores": {"A6": 0}, "cost": 0.00651}
