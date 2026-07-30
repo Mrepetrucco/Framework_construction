@@ -1,0 +1,56 @@
+# 7POF V2 — STATE MANIFEST
+**Canon state:** _7POF_ V2 live · L7PV2 = standard operating · LEAN7POF2 V2 = external/portable.
+**Naming law:** active canon carries the V2 marker; any framework artifact WITHOUT it is SUPERSEDED
+→ halt on encounter, load the §1 V2 file for that role. **Claim discipline:** MEASURED-with-source / UNVERIFIED.
+
+## 1. CURRENT / NEWEST VERSIONS — all components, with locations
+| # | Component | Newest live file | GitHub (Framework_construction) | Drive home (id) |
+|---|---|---|---|---|
+| 1 | FULL canon (_7POF_ V2) | 20260731__7POF__V2_FULL_CANON.md.txt (sha 3323c7f5…) | canon/20260730_2316_7POF_V2/ | objects/Canonical 1xeZRcFTCAffxpjeggFJP_wGxrVTeTEb7 |
+| 2 | LEAN — standard operating (L7PV2) | 20260730_LEAN7POF_AX7_v1_update_pack.md.txt | canon/…_7POF_V2/ | LEAN7POF 1eRJkqQ0Oc6ocMFg-6PwtUAgZQnT7Incr |
+| 3 | LEAN2 — external/portable | 20260730_LEAN7POF2_AX7_v1_update_pack.md.txt | canon/…_7POF_V2/ | LEAN7POF folder (same parent) |
+| 4 | Interpreter (Claude-native) | 20260730_Interpreter_Plugin_AX7_v1_updates.md.txt §A (SKILL v1.1) + interpreter_agent_v2.py | Interpreter_Agent repo (launcher+system) · canon/…_7POF_V2/ (delta) | Interpreters 1RF3CvhNQqy-E9_5w-GSuW7icmPTKdjyT · Agents folder |
+| 5 | Plain_Interpreter (keyless/secondary) | plain_interpreter.py (P-c1 default + P-a Gemini-API mode, MIN_CAP=2500) | Public_Dump (commit 923a7a95) | Interpreters folder (register copy) |
+| 6 | Plugin — Claude-API (P-c2-API) | 20260725_LEAN7POF_Claude_plugin.zip → v1.0.3 changelist (updates §B) | canon/…_7POF_V2/ (changelist) | Interpreters folder · Skill_Versions 1wHkNbU4epveZXXd0MSzdtwERIDDuaGpJ |
+| 7 | Plugin — keyless (P-c2) | 20260725_LEAN7POF2_browser_plugin.zip → v1.0.3 changelist | canon/…_7POF_V2/ (changelist) | Interpreters folder · Skill_Versions |
+| 8 | Skills (interpreter + api-plugin) | lean7pof-interpreter_SKILL.md · lean7pof-api-plugin_SKILL.md (bundle v1) | (pushed with campaign) | Skill_Versions 1wHkNbU4epveZXXd0MSzdtwERIDDuaGpJ |
+| 9 | Migration ruling | 20260731_7POF_V2_MIGRATION.md.txt | canon/…_7POF_V2/ | objects/Canonical |
+| 10 | AX7 spine (V1.0 lineage) | 20260730_AX7_v1_0_CONSOLIDATED.md.txt | canon/…_7POF_V2/ + Benchmarking/…_AX7_V1_RELEASE/ | objects/Canonical |
+| 11 | Artifact fold-ins FI-1..9 | 20260730_ArtifactA_FULL7POF_foldins.md.txt | canon/…_7POF_V2/ | objects/Canonical (apply into A/C/F/K/M/Protocol/Rubric) |
+| 12 | This manifest | 20260730_2343_state.md.txt | State/ | State 1MldiCAmXN7FAsKDr6zk5xWlyTQy3sku0 |
+
+NOTE (Interpreter/Plain/Plugin currency): the code artifacts (rows 4–7) carry the AX7 v1.0 DELTAS
+(updates §A/§B: F3′ reconcile-enforce, differential parser pair, provider-aware bound, corrected
+model-selector defaults, cache-token meter). Delta is authoritative now; a rebuilt binary/zip that
+folds the delta is the next issuance — until then apply the changelist over the newest zip/py above.
+
+## 2. EVIDENCE LEDGERS (measured, immutable)
+GitHub: Benchmarking/20260730_2242_AX7_v1_campaign/ (F7·F8·F10·F3′·pilot) + Benchmarking/20260730_2301_AX7_V1_RELEASE/ (v0.1–v0.4, F10 r2/r3, spotset, scorer).
+Drive: Benchmarking 1WYpeEpEcEmv1oBDzpSOsYJ_iKDEhRav9 (place same ledgers).
+Headline: F7 20/20 off-family (FULL=MINIMAL, trap escaped) · F8 cluster Z=10.18 @ frontier-bare n=48 r̄=0.747 · F3′ A4 0.752→1.000 · map hash 3ba03429…/addendum f20c2ff4….
+
+## 3. SUPERSEDED → ARCHIVE (lineage/rollback only; do NOT operate from these)
+| Superseded | Replaced by (§1 row) |
+|---|---|
+| 7POF / LEAN7POF v1.3 (all v1.x) | 1 / 2 |
+| LEAN7POF2 v1.2–v1.3 incl. Drive LEAN7POF2_External_Edition_v1_3.md (1E7kUVf8brjPSSBP3vxoWdU-H0yoos931) | 3 |
+| AX7 v0.1 / v0.2 / v0.3 / v0.4 | 10 (folded into 1) |
+| Plugin v1.0.0 / v1.0.1 / v1.0.2 (both variants) | 6 / 7 |
+| Interpreter SKILL v1.0 · interpreter_agent.py v1 launcher | 4 |
+| Plain_Interpreter v0.1 (pre P-a mode) | 5 |
+| Zblock v2.1 as SOLE schema | compact envelope (wire) + Zblock v2.1 (rich), 1:1 map |
+| Prior state manifests / PORT_ACROSS v1,v2 / 20260726_0615 | 12 (this file) |
+Owner archive action (no Drive move/delete tool available to Claude): move the above into
+`_ARCHIVE_v1x/` under their current Drive parent, or title-tag `[SUPERSEDED_V2]`. GitHub dated
+folders remain immutable history.
+
+## 4. RESIDUALS (non-blocking; V2 operates now)
+F10 second-adjudicator clean re-run (unblocks on gpt-5 via OpenAI org verification — owner) · scale
+no-regression re-check · F9 optional axes · 2000-tok bind [UNVERIFIED — one call confirms] ·
+tool-ceiling FOLLOW-UP (later turn, standing) · NMC bake-off config pick · rebuild Interpreter/Plain/
+plugin binaries to fold the §1-note deltas.
+
+## 5. CREDENTIAL / PUSH
+Pushes use Github_key3.env (Contents:write CONFIRMED on all 3 repos, header-only, never committed).
+envs/github.env token 403'd this campaign (stale/rotated) — key3 is the working push credential.
+Rotation owner-scheduled (R-e); hard line intact (no key to any external/shared surface).
