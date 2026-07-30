@@ -1,0 +1,42 @@
+# 7POF V2 — MIGRATION EXECUTED
+**File:** 20260731_7POF_V2_MIGRATION.md.txt · **prefix law:** _7POF_ (full canon), LEAN7POF_ (lean),
+LEAN7POF2_ (external). **Migration ruling:** owner-executed this turn. Basis of record: AX7 v1.0
+(20260730_AX7_v1_0_CONSOLIDATED) cleared its migration gates — F7 20/20 off-family (full-canon trap
+escaped), F8 deterministic-cluster Z=10.18 @ frontier-bare [MEASURED], F3′ calibration→1.000, no-
+regression at pilot n, immutable map hash-verified. AX7 is the interface reorganisation OF 7POF, so
+migration = 7POF advances to V2 with AX7 as its operating spine; the axes and the seven principles
+coexist via the immutable map (§8 of the consolidated file), not as rivals.
+
+## WHAT V2 IS
+_7POF_ V2 (FULL canon) = the seven principles + the seven AX7 interface axes bound by the immutable
+map, with all measured amendments folded (comparator law, correlation regime, provider-aware
+emission bound + tables, F3′ band enforcement, differential parser pair, P1–P5 high-elaboration
+governance, adjudicator-competence protocol, verification gate, corrected model selection). Artifact
+set A/C/F/K/M/Protocol/Rubric receive fold-ins FI-1..FI-9 (delivered file
+20260730_ArtifactA_FULL7POF_foldins).
+
+## STANDARD OPERATING FRAMEWORK (owner ruling)
+**LEAN7POF V2 (L7PV2)** is now the STANDARD operating framework, with fallback to the relevant FULL
+_7POF_ V2 parts as needed. Fallback pointer table (L7PV2 clause → FULL V2 section):
+| Operating need | L7PV2 clause | Falls back to FULL _7POF_ V2 |
+|---|---|---|
+| Partition / admission test | L15 | AX1–AX7 axis definitions + §1 partition law |
+| Emission + provider bounds | L16 | §3 emission contracts + provider table |
+| Reconciler / parser pair / F3′ | L17 | §4 reconciler contract + AX4/AX5 |
+| Comparator + correlation | L18 | §7 measurement protocol |
+| Verification gate | L19 | AX6 + §9 gate-record discipline |
+| Refusal / failure states | refusal skeleton | AX7 state machine |
+| High-elaboration (Fable) governance | model-selection + L15 | FI-4 P1–P5 (Artifact A) |
+| Adjudication / Gate-3 independence | cross-family rule | FI-5 adjudicator-competence protocol |
+
+## CHANGE OF CANON STATE
+Prior: 7POF/LEAN7POF v1.3 operative canon; AX7 v1.0 = release artifact. Now (V2): _7POF_ V2 = canon;
+L7PV2 = standard operating; LEAN7POF2 V2 = external/portable. v1.3 retained as superseded lineage
+(rollback intact — the map is bidirectional, v1.3 artifacts untouched on Drive). Naming law updated:
+active canon carries the V2 marker; anything without it is superseded → halt on encounter.
+
+## RESIDUALS CARRIED INTO V2 (unchanged, on record)
+F10 second-adjudicator clean-clearance re-run once a competent foreign engine is available (gpt-5
+pending OpenAI org verification — owner action) · scale no-regression re-check · F9 optional axes ·
+2000-token bind [UNVERIFIED — one call confirms] · tool-ceiling FOLLOW-UP (later turn) · NMC bake-off
+config pick. None block V2 operation; all are additive-clearance items.
