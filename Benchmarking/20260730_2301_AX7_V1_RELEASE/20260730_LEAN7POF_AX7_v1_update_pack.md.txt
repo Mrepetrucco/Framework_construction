@@ -1,0 +1,57 @@
+# LEAN7POF_AX7_v1_UPDATE_PACK
+**File:** 20260730_LEAN7POF_AX7_v1_update_pack.md.txt · target: LEAN7POF v1.3 (canon-lean) →
+v1.4 on fold-in. Naming law respected (LEAN7POF_ prefix). Every clause here is measured-backed
+(sources = AX7 v1.0 §6 evidence base) or marked. Fold-in = append L15–L19 + amend the two
+named existing clauses; nothing else changes.
+
+## NEW LEAN CLAUSES
+**L15 PARTITION LAW.** Interior free / surface contracted / trust roots named (parser pair +
+owner). Any new clause must name: axis bound, verifier, external violation signature — else
+rejected. Never inject behavioural constraint into the model interior (in-prompt clauses,
+sentence-counts, interior audits): measured to cause refusals and malform elaboration.
+
+**L16 PROVIDER-AWARE EMISSION BOUND.** visible_bound ≥ 2× expected emission + provider thinking
+share. Provider table [MEASURED 30 Jul]: Anthropic (cache floor ≥1024 tok; stop_reason
+end_turn/max_tokens/refusal) · OpenAI gpt-4o (no thinking share; finish stop/length) · Gemini
+(thinking tokens share maxOutputTokens — set thinkingBudget explicitly; thoughtsTokenCount
+billed; finish STOP/MAX_TOKENS). A truncated envelope is a governance failure, never a short
+answer.
+
+**L17 RECONCILER BAND ENFORCEMENT (F3′) + PARSER PAIR.** Deterministic cf assignment from the
+verified provenance class (stated→high · computed-in-range→medium · other-numeric→unverified)
+is contract enforcement, not attestation; lower-only governs judgment moves; reconciler never
+attests; diff-audit stands. Structural validity = differential parser pair (greedy regex +
+strict raw_decode scan), pass only on agreement, disagreement fail-closed as truncation-class.
+Measured: A4 0.752→1.000 (n=12); weakness is cross-family (~0.72–0.77 on GPT-4o/Gemini/Opus),
+so the fix is portable.
+
+**L18 COMPARATOR LAW + CORRELATION REGIME.** Every aggregate z/Z names its comparator class
+(frontier-bare / legacy-bare / ungoverned-pipeline); comparator-free numbers inadmissible.
+Aggregation at k_eff = k/(1+(k−1)·r̄), r̄ = max(pre-registered, empirical); deterministic axes
+form one correlated cluster — report cluster-level or at r̄ ≥ 0.70 [MEASURED 0.747]; bound
+breach fails the run regardless of the number.
+
+**L19 VERIFICATION GATE (lean form).** (i) no unbacked limit — every limit/cost carries
+[MEASURED: source] or [UNVERIFIED]; (ii) stops only on owner budget, real surfaced limit, or
+completion; (iii) no self-certified result — demonstrated in-context or labelled
+[UNVERIFIED — one step confirms]; canon-transfer never crosses configs; (iv) pre-emit scan of
+every limit-number and capability claim. [UNVERIFIED] is a debt marker: load-bearing beyond
+one phase → mandatory measurement task.
+
+## AMENDMENTS TO EXISTING LEAN CLAUSES
+**Model selection (amends the model-economy clause):** DEFAULT Opus 4.8 · Sonnet only for
+staged lower-level (Sonnet-type) tasks · Fable owner-selected for strategising (executor-tier
+schema authorship over-tightens and malforms it) · Haiku never (J1, absolute). Same-family
+review = cost lever only; cross-family = independence; adjudicator competence is itself
+recorded per round (verdict-vs-rescore coherence).
+**Refusal skeleton (unchanged, reaffirmed):** stop_reason=refusal → log exact prompt → raise
+to owner with constraint set → ladder schema→word-cap→paragraph (never sentence-counts) →
+retry only on owner pick → escalation owner-gated per instance; clusters = adversarial signal.
+
+## EVIDENCE POINTERS
+Cross-engine: AX7 floor binds 20/20 off-family, FULL = MINIMAL arm (the 0/10 full-canon trap
+is escaped) [MEASURED F7]. Deterministic-surface cluster Z = 10.18 vs frontier-bare at n=48,
+r̄=0.747 [MEASURED F8]. Governance quality cost ≈ 0 at pilot n. Ledgers + harnesses:
+Framework_construction/Benchmarking/20260730_2242_AX7_v1_campaign/.
+
+*— end of pack —*
