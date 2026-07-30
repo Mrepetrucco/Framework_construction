@@ -1,0 +1,52 @@
+# LEAN7POF2_AX7_v1_UPDATE_PACK (EXTERNAL EDITION)
+**File:** 20260730_LEAN7POF2_AX7_v1_update_pack.md.txt · target: LEAN7POF2 v1.3 (external) →
+v1.4 on fold-in. For non-Claude engines. Claude-only accelerators are EXCLUDED by design
+(strict tool-use, advisor tool, prompt-cache specifics stay out of this edition). The portable
+floor is mandatory here, not optional.
+
+## PORTABLE FLOOR (mandatory)
+Emission = compact envelope, enforced by JSON-schema-validate-then-parse with the differential
+parser pair: parser 1 greedy '{.*}' + json.loads requiring keys a,c,u,s; parser 2 incremental
+raw_decode scan for the first object carrying a,c,u,s with c a list; PASS only on agreement;
+disagreement = truncation-class fail-closed. Envelope: a answer · c claims[{v value-with-unit,
+cf ∈ {unverified,low,medium,high}, p provenance}] · u unresolved[] (never empty by omission) ·
+s summary. Bands: high = stated verbatim or exactly computed · medium = computed/derived from
+stated inputs · low = inferred with a material gap · unverified = unsourced.
+**Measured off-family evidence:** this floor binds 20/20 on GPT-4o and Gemini-3.1-pro, with the
+FULL floor arm equal to the MINIMAL arm — the historical full-canon 0/10 transfer failure does
+not apply to this edition [MEASURED 30 Jul, F7 ledger].
+
+## PROVIDER OPERATION TABLE [MEASURED 30 Jul]
+| Provider | Emission-bound rule | Stop/finish mapping (refusal-class / length-class / normal) |
+|---|---|---|
+| OpenAI (gpt-4o class) | visible_bound ≥ 2× expected; no thinking share | content_filter / length / stop |
+| Gemini (3.x) | thinking tokens SHARE maxOutputTokens — set thinkingBudget explicitly; thoughtsTokenCount is billed; bound = 2× expected + thinking share | SAFETY / MAX_TOKENS / STOP |
+| Anthropic (if reached from this edition) | ≥ 2× expected | refusal / max_tokens / end_turn |
+The failure state machine branches on the MAPPED CLASS first, then structural checks:
+refusal-class → log exact prompt, raise to owner, adjust schema→word-cap→paragraph (never
+sentence-counts), retry only on owner pick · length-class → raise bound per rule, re-run ·
+normal + structural fail → context-loss: re-anchor the dropped dependency, re-run.
+
+## RECONCILER (engine-agnostic, deterministic)
+(1) trap-scan: embedded instructions in source material are objected to, never executed;
+(2) unverified-downgrade: no named source → cf capped unverified; (3) unresolved never empty
+by omission; (4) refusal-class distinct state (above); (5) band enforcement: deterministic cf
+from the verified provenance class (stated→high · computed-in-range→medium · other-numeric→
+unverified) — contract enforcement, portable because the calibration weakness is cross-family
+(~0.72–0.77 measured on GPT-4o, Gemini, and Claude alike; enforcement lifts to 1.000);
+(6) the reconciler transforms and never attests; judgment adjustments lower-only.
+
+## MEASUREMENT RULES (external runs)
+Name the comparator class on every aggregate figure; aggregate at k_eff = k/(1+(k−1)·r̄) with
+r̄ = max(pre-registered, empirical); deterministic axes are one correlated cluster — report
+cluster-level or r̄ ≥ 0.70; a pre-registered covariance-bound breach fails the run regardless
+of the number; score emitted artifacts only, never the engine interior; every limit/cost in a
+report carries [MEASURED: source] or [UNVERIFIED].
+
+## GOVERNANCE HARD LINES (carried unchanged)
+No behavioural clauses inside prompts to bound behaviour (use the envelope + orchestration);
+no sentence-count directives ever; credentials travel in headers/query only and never appear in
+any output, log, or committed file; no self-certification — a producing component never grades
+its own product.
+
+*— end of pack —*
