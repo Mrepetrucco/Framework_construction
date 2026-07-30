@@ -1,0 +1,43 @@
+# INTERPRETER + API-PLUGIN UPDATES FOR AX7 v1.0
+**File:** 20260730_Interpreter_Plugin_AX7_v1_updates.md.txt · targets: lean7pof-interpreter
+SKILL (→ v1.1) and lean7pof-api-plugin (→ v1.0.3). Deltas only; everything not named is
+unchanged.
+
+## A. lean7pof-interpreter SKILL — delta v1.1
+1. FLOW step 2.5 (new, between Interpret and Emit): **Reconcile-enforce** — deterministic band
+   assignment from the verified provenance class (stated→high · computed-in-range→medium ·
+   other-numeric→unverified); contract enforcement, not attestation; judgment moves lower-only.
+   Measured effect: A4 calibration 0.752→1.000.
+2. EMIT validation: structural pass = **differential parser pair** (greedy + strict raw_decode
+   scan), agreement-only, disagreement fail-closed as truncation-class.
+3. EMISSION bound: visible_bound ≥ 2× expected + provider thinking share (Gemini-class engines
+   share thinking with the output cap — set the budget explicitly).
+4. MODEL SELECTION line replaced: default Opus 4.8 · Sonnet only for staged lower-level tasks ·
+   Fable owner-selected for strategising · Haiku never (J1).
+5. CONSTRAINTS add: every limit/cost the interpreter reports carries [MEASURED: source] or
+   [UNVERIFIED]; stops cite only owner budget, surfaced limit, or completion.
+6. Reference files add: reference/provider_bounds.md (the AX7 §3 table) alongside the existing
+   input_call_table and zblock schema.
+
+## B. lean7pof-api-plugin — v1.0.3 changelist
+1. reconciler.js: add check (5) band enforcement (deterministic cf from provenance class,
+   lower-only for judgment) and check (6) strict re-parse agreement — reject render when the
+   greedy and strict parses disagree (fail-closed; surface as truncation-state, offer re-run at
+   2× bound).
+2. Cost meter: read cache_creation_input_tokens / cache_read_input_tokens from usage and price
+   at 1.25× / 0.10× of input respectively; label any assumed rate [UNVERIFIED].
+3. popup.html: (carried v1.0.2 item) the model selector lists NO claude-haiku-* id; selector
+   default = claude-opus-4-8; claude-fable-5 listed for owner selection.
+4. Refusal state: on stop_reason=refusal render the distinct refusal panel (constraint set +
+   ladder schema→word-cap→paragraph); never auto-retry; escalation requires an explicit user
+   click per instance.
+5. Hard lines unchanged: key in storage, header-only to api.anthropic.com, never logged or
+   rendered; host_permissions unchanged.
+
+## C. Zblock/compact schema note (both components)
+The compact envelope (a/c/u/s·m) is the wire format for governed ops; full Zblock v2.1 remains
+the canonical rich schema. Mapping is 1:1 on shared fields (answer→a, claims→c with
+v/cf/p, unresolved→u, summary→s, meter→m); components accept either and emit compact by
+default under the low-cost standard.
+
+*— end of updates —*
