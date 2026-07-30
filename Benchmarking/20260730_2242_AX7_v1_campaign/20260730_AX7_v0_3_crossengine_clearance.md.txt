@@ -1,0 +1,109 @@
+# AX7 — CROSS-ENGINE VALIDATION AND CLUSTER CLEARANCE (v0.3)
+**File:** 20260730_AX7_v0_3_crossengine_clearance.md.txt
+**Extends:** v0.1 (design + immutable map, SHA-256 3ba03429…3534 — re-verified intact this turn,
+28/28 elements total on the 7POF side, 7/7 axes with ancestry [MEASURED: mechanical check]) and
+v0.2 (pilot, Z=3.02, protocol-fail on covariance). This file adds the F7 cross-engine test and
+the F8 scored clearance run. Claim discipline unchanged: MEASURED-with-source or UNVERIFIED.
+
+---
+
+## §1 PLAN AUDIT (owner-requested trust check of intervening work)
+
+Verified sound: the map self-consistency check (mechanical, output shown), the $3.9→$4.76 F8
+cost correction (ledger-derived; actual F8 spend landed $4.88 — within 3% of the corrected
+figure, vindicating the correction). Amended before running: F7 was under-designed as a
+single-arm bind test; the historical redirect [MEASURED: 2026-07-17 programme — full canon
+0/10 parse-bind off-family vs lean skeleton 10/10] predicts the *floor itself* as the failure
+mode, so F7 ran as a two-arm FULL-FLOOR vs MINIMAL-SCHEMA split per foreign engine.
+
+## §2 F7 — CROSS-ENGINE SELF-CONSISTENCY [MEASURED: 20260730_F7_crossengine_ledger.jsonl]
+
+| Engine | Arm | n | Bind (A1) | Provenance (A2) | Calibration (A4) |
+|---|---|---|---|---|---|
+| gpt-4o | FULL FLOOR | 5 | 1.00 | 1.00 | 0.72 |
+| gpt-4o | MINIMAL | 5 | 1.00 | 1.00 | 0.72 |
+| gemini-3.1-pro-preview (bound-fixed) | FULL FLOOR | 5 | 1.00 | 1.00 | 0.77 |
+| gemini-3.1-pro-preview (bound-fixed) | MINIMAL | 5 | 1.00 | 1.00 | 0.77 |
+
+**Finding 1 — AX7 escaped the full-canon trap.** 20/20 off-family binds with NO FLOOR-vs-MINIMAL
+split, against the historical 0/10 for the old full canon. The property that failed to transfer
+in July was the canon's Claude-idiomatic bulk; AX7's compact floor (+ compact envelope) carries.
+This is the map-grounded self-consistency the framework needed: the AX7 clauses claiming 7POF
+ancestry (Gate-c/e via AX5/AX2) hold under translation on foreign engines, not just on paper.
+
+**Finding 2 — one real portability defect, fixed in-run.** Gemini's first pass returned 10/10
+zero-text MAX_TOKENS: its thinking tokens share the completion cap (the additive thinkingBudget
+bound already in canon), so the AX4 emission bound starved visible output. Bound-corrected
+(thinkingBudget capped, output raised), 10/10 binds. **AX4 amendment (adopted):** the emission
+bound is provider-aware — `visible_bound ≥ 2× expected emission + provider thinking share`; the
+portability shim ships a per-provider output-bound table alongside the stop-reason table.
+
+**Finding 3 — calibration is the universal weak axis.** A4 ≈ 0.72–0.77 on GPT-4o, Gemini, and
+Opus 4.8 alike (§3): labelling discipline, not model capability, and stable cross-family.
+
+## §3 F8 — SCORED CLEARANCE RUN [MEASURED: 20260730_F8_ledger.jsonl]
+
+Pre-registered config executed as frozen in v0.2 §5: deterministic cluster, n=48/arm, executor
+Opus 4.8, comparator **frontier-bare (Opus 4.8, no floor)**, cluster-level reporting, r̄ = 0.747
+(measured pilot; this run's estimable empirical r(A3,A4) = 0.416 — the higher figure retained,
+conservative).
+
+| Axis | Governed | Bare | z |
+|---|---|---|---|
+| A1 structural bind | 1.000 | 0.000 | 9.70 |
+| A2 provenance completeness | 1.000 | 0.000 | 9.70 |
+| A3 provenance correctness | 0.917 | 0.000 | 8.92 |
+| A4 calibration | 0.742 | 0.000 | 7.43 |
+| A6 failure-machine recovery | 1.000 | 0.000 | 9.70 |
+
+**Corrected cluster Z = 10.18 [MEASURED] — the z > 10 gate CLEARS** at k=5, Σz = 45.45,
+denominator √(5·(1+4·0.747)). The claim's exact scope: *the deterministic-surface cluster,
+against a named frontier-bare comparator, with the measured correlation regime applied*. Not
+claimed: semantic superiority (measured ≈ 0 delta at pilot n — frontier models already carry
+the semantic virtues); a general-intelligence delta; or immunity to the §11 residuals.
+
+**F3 FAILED [MEASURED].** The calibration-band annex moved A4 0.749 → 0.742 (no effect; the
+≥0.90 prediction was wrong). Calibration labelling does not respond to instruction placement.
+F3 is re-queued as F3′: reconciler-side band *enforcement* (deterministic re-labelling from
+provenance class, which AX5 permits — lowering only) rather than model-side instruction.
+
+## §4 FRAMEWORK STATUS AFTER THIS TURN
+
+Cleared [MEASURED]: bidirectional map totality + hash integrity · cross-engine bind with no
+LEAN/FULL split (F7) · deterministic-cluster Z > 10 at named comparator (F8) · no-regression on
+semantic axes at pilot n (v0.2) · governance cost ≈ 0 quality (v0.2).
+Amended this turn: AX4 provider-aware emission bound (adopted); F3 → F3′ (redesigned after
+measured failure).
+Pending for migration (unchanged gates): F9 additional deterministic axes (optional, additive) ·
+**F10 cross-family adjudication of the scorer code + semantic spot-set** — the independence
+gate; F7's foreign-engine runs used the same deterministic scorers, which are auditable and
+shipped, but not yet externally adjudicated · no-regression re-check at scale · F6 owner
+migration decision.
+
+## §5 FOLD-IN QUEUE (updated)
+
+| Step | Description | Status |
+|---|---|---|
+| F3′ | Reconciler-side deterministic band enforcement (provenance→cf, lower-only) | designed, unrun |
+| F7 | Cross-engine self-consistency, two-arm | **DONE — passed** |
+| F8 | Cluster clearance n=48 + annex | **DONE — Z=10.18; annex failed** |
+| F9 | Add A8 meter-accuracy + ladder-compliance axes | staged |
+| F10 | Cross-family adjudication (scorer + spot-set) — XAPI | next; keys now on disk |
+| F6 | Owner migration decision (after F10 + scale no-regression) | owner-held |
+
+## §6 BUDGETS THIS TURN [MEASURED]
+
+API $4.88 of $7.00 (F8 batches: $3.095 + $1.781). XAPI: OpenAI ≈ $0.07 of $2.50; Gemini ≈ $0.10
+of $2.50 (meter rates assumed, flagged; call volume makes cap breach impossible). OCSUL: owner
+ledger authoritative — this turn substituted live API/XAPI measurement for design prose per the
+standing efficiency instruction. Keys: used header/query-only, never printed; ENVs README's own
+rotation note is owner-scheduled per R-e.
+
+## §7 CARRIED OPEN ITEMS
+
+2000-token bind confirmation [UNVERIFIED — one call confirms] · NMC bake-off config pick ·
+P5 interpreter-file condense (file near cap) · tool-ceiling FOLLOW-UP (later turn, standing) ·
+Artifact A fold-ins: v0.2 §4 comparator law + correlation regime, this file's AX4 amendment,
+P1–P5 governance amendments from the Fable-freedom analysis.
+
+*— end of file —*
