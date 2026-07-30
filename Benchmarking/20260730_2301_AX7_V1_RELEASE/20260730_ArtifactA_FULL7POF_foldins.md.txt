@@ -1,0 +1,56 @@
+# ARTIFACT A / FULL 7POF FOLD-INS FOR AX7 v1.0
+**File:** 20260730_ArtifactA_FULL7POF_foldins.md.txt · numbered fold-ins for the canonical
+Artifact A (+ Protocol §3, + K-graph). Apply in order; each names its target section. FULL
+7POF remains operative canon until owner migration; these fold-ins keep canon current with the
+measured record either way.
+
+FI-1 (A §principles/measurement): COMPARATOR LAW — every aggregate z/Z names its comparator
+class (frontier-bare / legacy-bare / ungoverned-pipeline); comparator-free figures
+inadmissible. CORRELATION REGIME — k_eff aggregation, r̄ = max(pre-registered, empirical);
+deterministic axes reported cluster-level or at r̄ ≥ 0.70 [MEASURED 0.747]; covariance-bound
+breach fails a run regardless of the number.
+
+FI-2 (A §emission): PROVIDER-AWARE EMISSION BOUND — visible_bound ≥ 2× expected + provider
+thinking share; per-provider bound/stop tables (AX7 v1.0 §3) attached as a canon annex.
+Truncated envelope = governance failure.
+
+FI-3 (A §reconciler / Protocol): F3′ BAND ENFORCEMENT — deterministic cf from verified
+provenance class is contract enforcement, not attestation; lower-only governs judgment
+adjustments; diff-audit duty stands. PARSER PAIR — structural validity requires greedy+strict
+parser agreement, fail-closed.
+
+FI-4 (A §governance of high-elaboration engines — the P1–P5 amendments, adopted): P1 surface-
+not-interior with semantic spot-checks; P2 generous word-caps (refusal-avoidance devices);
+P3 reconciler transforms-never-attests + diff-audit + edit-distance alert; P4 refusal ladder
+owner-gated per instance, clusters = adversarial signal (restores the July skeleton); P5 trust
+roots named (parser pair + owner), per-instance fail-closed canaries, reader rotation.
+
+FI-5 (A §adjudication / Gate-3): ADJUDICATOR-COMPETENCE RECORDING — adjudicator packets must be
+complete (all source dependencies); per-round coherence (verdict vs own rescores) is recorded;
+an adjudicator with measured incoherence across rounds does not block a gate alone — the
+record goes to the owner for an F6-class ruling. Basis: F10 three-round record (Gemini caught
+two real defects then passed the corrected scorer at thresholds; GPT-4o's verdicts and
+rescores never cohered). Residual of record: re-run the second-adjudicator leg on a competent
+foreign engine (gpt-5 pending OpenAI org verification — owner action).
+
+FI-6 (A §model economy): MODEL SELECTION corrected — default Opus 4.8; Sonnet only for staged
+lower-level tasks; Fable owner-selected for strategising (executor-tier schema authorship
+over-tightens and malforms Fable leverage); Haiku never (J1). Same-family review = cost lever;
+cross-family = independence.
+
+FI-7 (A §verification): VERIFICATION GATE as canon (four rules: no unbacked limit · admissible
+stop reasons only · no self-certified result / no cross-config canon-transfer · pre-emit
+scan). [UNVERIFIED] is a debt marker with one-phase promotion to a measurement task.
+
+FI-8 (A §evidence register / K-graph nodes): add measured nodes — AX7 map totality+hash ·
+F7 20/20 off-family, FULL=MINIMAL (full-canon trap escaped by the compact floor) · F8 cluster
+Z=10.18 @ frontier-bare, n=48, r̄=0.747 · pilot covariance-guard trip (naive 5.43 rejected) ·
+F3 instruction-side FAIL vs F3′ contract-side 1.000 · calibration drift is cross-family
+(~0.72–0.77) · governance quality cost ≈ 0 at pilot n · GitHub campaign record at
+Framework_construction/Benchmarking/20260730_2242_AX7_v1_campaign/.
+
+FI-9 (Protocol §3, reaffirm unchanged): the Fable refusal skeleton — log exact prompt · raise
+to owner with constraint set · ladder schema→word-cap→paragraph (never sentence-counts) ·
+retry only on owner pick · escalation owner-gated per instance.
+
+*— end of fold-ins —*
