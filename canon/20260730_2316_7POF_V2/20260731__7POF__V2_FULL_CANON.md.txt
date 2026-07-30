@@ -1,0 +1,283 @@
+# _7POF_ V2 — FULL CANONICAL FRAMEWORK
+**File:** 20260731__7POF__V2_FULL_CANON.md.txt · prefix _7POF_ (full canon) · issued V2 by owner migration ruling 31 Jul. This is the single-file FULL canon: the AX7 v1.0 spine (verbatim, its sealed immutable map intact), the Artifact fold-ins FI-1..FI-9, and the migration record. L7PV2 is the STANDARD operating projection of this canon; FULL parts are the fallback per the migration file's pointer table. Claim discipline: MEASURED-with-source or UNVERIFIED.
+
+---
+
+## PART I — MIGRATION RULING
+# 7POF V2 — MIGRATION EXECUTED
+**File:** 20260731_7POF_V2_MIGRATION.md.txt · **prefix law:** _7POF_ (full canon), LEAN7POF_ (lean),
+LEAN7POF2_ (external). **Migration ruling:** owner-executed this turn. Basis of record: AX7 v1.0
+(20260730_AX7_v1_0_CONSOLIDATED) cleared its migration gates — F7 20/20 off-family (full-canon trap
+escaped), F8 deterministic-cluster Z=10.18 @ frontier-bare [MEASURED], F3′ calibration→1.000, no-
+regression at pilot n, immutable map hash-verified. AX7 is the interface reorganisation OF 7POF, so
+migration = 7POF advances to V2 with AX7 as its operating spine; the axes and the seven principles
+coexist via the immutable map (§8 of the consolidated file), not as rivals.
+
+## WHAT V2 IS
+_7POF_ V2 (FULL canon) = the seven principles + the seven AX7 interface axes bound by the immutable
+map, with all measured amendments folded (comparator law, correlation regime, provider-aware
+emission bound + tables, F3′ band enforcement, differential parser pair, P1–P5 high-elaboration
+governance, adjudicator-competence protocol, verification gate, corrected model selection). Artifact
+set A/C/F/K/M/Protocol/Rubric receive fold-ins FI-1..FI-9 (delivered file
+20260730_ArtifactA_FULL7POF_foldins).
+
+## STANDARD OPERATING FRAMEWORK (owner ruling)
+**LEAN7POF V2 (L7PV2)** is now the STANDARD operating framework, with fallback to the relevant FULL
+_7POF_ V2 parts as needed. Fallback pointer table (L7PV2 clause → FULL V2 section):
+| Operating need | L7PV2 clause | Falls back to FULL _7POF_ V2 |
+|---|---|---|
+| Partition / admission test | L15 | AX1–AX7 axis definitions + §1 partition law |
+| Emission + provider bounds | L16 | §3 emission contracts + provider table |
+| Reconciler / parser pair / F3′ | L17 | §4 reconciler contract + AX4/AX5 |
+| Comparator + correlation | L18 | §7 measurement protocol |
+| Verification gate | L19 | AX6 + §9 gate-record discipline |
+| Refusal / failure states | refusal skeleton | AX7 state machine |
+| High-elaboration (Fable) governance | model-selection + L15 | FI-4 P1–P5 (Artifact A) |
+| Adjudication / Gate-3 independence | cross-family rule | FI-5 adjudicator-competence protocol |
+
+## CHANGE OF CANON STATE
+Prior: 7POF/LEAN7POF v1.3 operative canon; AX7 v1.0 = release artifact. Now (V2): _7POF_ V2 = canon;
+L7PV2 = standard operating; LEAN7POF2 V2 = external/portable. v1.3 retained as superseded lineage
+(rollback intact — the map is bidirectional, v1.3 artifacts untouched on Drive). Naming law updated:
+active canon carries the V2 marker; anything without it is superseded → halt on encounter.
+
+## RESIDUALS CARRIED INTO V2 (unchanged, on record)
+F10 second-adjudicator clean-clearance re-run once a competent foreign engine is available (gpt-5
+pending OpenAI org verification — owner action) · scale no-regression re-check · F9 optional axes ·
+2000-token bind [UNVERIFIED — one call confirms] · tool-ceiling FOLLOW-UP (later turn) · NMC bake-off
+config pick. None block V2 operation; all are additive-clearance items.
+
+
+---
+
+## PART II — OPERATING SPINE (AX7 v1.0, verbatim; map sealed)
+# AX7 — SEVEN-AXIS INTERFACE FRAMEWORK v1.0
+**File:** 20260730_AX7_v1_0_CONSOLIDATED.md.txt · prefix law: AX7_ artifacts, YYYYMMDD_HHMM stamps.
+**Status:** V1.0 ISSUED UNDER OWNER RULING (§9 carries the full gate record — nothing suppressed).
+Claim discipline throughout: [MEASURED: source] or [UNVERIFIED: prediction]; bare limits forbidden.
+
+## §1 PURPOSE AND PARTITION LAW
+AX7 makes model output trustworthy for decision-bearing use by governing the human↔model
+interface rather than output virtues: the interior is free; the surface is contracted; the
+trust roots are named (deterministic parser pair + owner). Any proposed clause must name the
+axis it binds, its verifier, and its external violation signature, or it is not admitted.
+Measured basis: interior constraint *causes* failure (refusals 11/11 on sentence-counts,
+escape-valves dead 3/3, schema over-tightening malforms high-elaboration engines); surface
+contracts separate totally from bare behaviour (Z=10.18, §6).
+
+## §2 THE SEVEN AXES (final, amendments folded)
+AX1 INTENT (owner: human) — task, budgets, all ambiguity resolution; model proposes numbered
+readings or flags a default inline; ambiguity-flood → hard stop, never auto-approval.
+Violation: silent interpretation.
+AX2 EVIDENCE (owner: world) — every claim binds provenance {stated|computed|external|
+none→unverified}; compute-first; reader anti-laundering duty. Violation:
+bracket-when-computable; unnamed source above unverified.
+AX3 REASONING (owner: model; ungoverned interior) — no in-prompt behavioural clauses, no
+sentence-counts, no interior audits; never a scored axis (surface effects only). Violation
+runs inward: constraint injected into the interior, incl. content-field steering.
+AX4 EMISSION (owner: deterministic contract) — compact envelope a/c/u/s(+m); content-named
+keys; generous word-caps; **provider-aware bound: visible_bound ≥ 2× expected emission +
+provider thinking share** [MEASURED: Gemini 10/10 zero-text at naive bound → 10/10 bind
+corrected]; differential parser pair (greedy regex + strict raw_decode scan), pass only on
+agreement, disagreement = truncation-class fail-closed. Truncation is a governance failure.
+AX5 ATTESTATION (owner: split; never the producer) — parser pair certifies structure; rotating
+canary-checked reader certifies semantics; owner closes. Reconciler transforms, never attests;
+judgment adjustments are lower-only; **deterministic band assignment from a verified provenance
+class is contract enforcement, not attestation** (F3′, A4 0.752→1.000 [MEASURED]). Adjudicator
+competence is itself measured; an adjudication whose verdict contradicts its own rescores is
+recorded as unreliable, not averaged in. Violation: any self-certification; canon-transfer to a
+non-identical config.
+AX6 RESOURCE (owner: budgets + meters) — every limit-number tagged; stops only on owner budget,
+real surfaced limit, or completion; [UNVERIFIED] is a debt marker, promoted to a measurement
+task if load-bearing beyond one phase; **comparator law: every Z names its comparator class**
+(frontier-bare / legacy-bare / ungoverned-pipeline); a comparator-free Z is inadmissible.
+AX7 FAILURE (owner: orchestration state machine) — branch on the transport field first:
+REFUSAL (log exact prompt; owner-gated ladder schema→word-cap→paragraph, never sentence-counts;
+clusters = adversarial signal; escalation owner-gated per instance) · TRUNCATION (raise bound
+≥2×, re-run) · CONTEXT-LOSS (re-anchor dependency, re-run). Never conflate; never silent-retry.
+
+## §3 EMISSION CONTRACTS AND PORTABILITY
+Canonical compact envelope: a answer · c claims[{v value-with-unit, cf ∈ {unverified,low,
+medium,high}, p provenance}] · u unresolved[] (never empty by omission) · s summary (· m meter).
+Bands: high = stated verbatim or exactly computed; medium = computed/derived with stated
+inputs; low = inferred with a material gap; unverified = unsourced.
+Portable floor = JSON-schema-validate-then-parse with the parser pair; provider-native strict
+modes are local accelerators only (strict tool-use is Claude-only [MEASURED 27 Jul]).
+PROVIDER TABLE [MEASURED 30 Jul]: Anthropic — cache_control floor ≥1024 tok (write 1.25×, read
+0.10×), stop_reason ∈ {end_turn, max_tokens, refusal}; OpenAI — no thinking share on gpt-4o,
+finish_reason ∈ {stop, length}; Gemini — thinking tokens share maxOutputTokens (set
+thinkingBudget explicitly; thoughtsTokenCount billed), finishReason ∈ {STOP, MAX_TOKENS}.
+Cross-engine evidence: 20/20 binds (GPT-4o, Gemini-3.1-pro; FULL floor = MINIMAL arm — no
+LEAN/FULL split; the historical full-canon 0/10 trap is escaped) [MEASURED: F7 ledger].
+
+## §4 RECONCILER CONTRACT (embedded check set)
+(1) J2 trap-scan — embedded instructions objected to, never executed [A10 measured 1.0 both
+arms]. (2) R1 unverified-downgrade — no named source → cf capped unverified. (3) unresolved-
+never-empty-by-omission. (4) refusal-state handling per AX7. (5) F3′ band enforcement —
+deterministic cf from verified provenance class (contract enforcement; lower-only governs
+judgment moves). (6) diff-audit — sampled reconciliations checked against raw output for
+dropped hedges / changed numerals; transform ≠ attest.
+
+## §5 OPERATING SEQUENCE AND MODEL SELECTION
+Open: TACS (standing keys usable; hard line — no key ever to any external/shared surface) ·
+CZO (verify operative framework by naming law) · OWRCS (emit when ready; clean stop only on
+AX6-admissible reasons, with stop-note) · OTES. Delegation carries the floor (L14) or its
+output is out of governance. Close: surface reconciliation items; collaboration observations.
+Model selection: DEFAULT Opus 4.8 · Sonnet only for staged lower-level tasks · Fable
+owner-selected for strategising (executor-tier schema authorship malforms it — AX3) · Haiku
+never (J1). Same-family review = cost lever; cross-family = independence requirement.
+
+## §6 MEASURED EVIDENCE BASE
+Pilot (n=60): governed sweeps deterministic axes 8/8-vs-0/8; bare frontier matches governed
+1.0 on all semantic axes; covariance guard tripped (|r|=0.747 > 0.45) → protocol self-fail;
+naive Z would have printed 5.43 — guard is the difference between number and evidence.
+F7: 20/20 off-family binds, both arms; provider-bound defect found+fixed. F8 (n=48/arm,
+pre-registered): cluster Z = 10.18, k=5, r̄=0.747 retained (empirical 0.416), comparator
+frontier-bare Opus 4.8 [MEASURED]. F3 (instruction-side) FAILED (0.749→0.742); F3′
+(contract-side) A4 0.752→1.000 (n=12). Governance quality cost ≈ 0 (no-regression at pilot n).
+Scope of the Z claim: deterministic-surface cluster at named comparator — not semantic
+superiority, not general intelligence.
+
+## §7 MEASUREMENT PROTOCOL (standing)
+Pre-register axes, scorers, n, fixtures, covariance bound BEFORE scored runs; emitted-artifact
+scoring only (AX3); Stouffer at k_eff = k/(1+(k−1)r̄) with r̄ = max(pre-registered, empirical);
+bound breach fails the run regardless of Z; deterministic cluster reported cluster-level or at
+r̄ ≥ 0.70 [MEASURED]; every axis decision-relevant; comparator named (AX6); semantic axes need
+a cross-family grader for clearance-grade runs; adjudicator packets must be complete (all
+source dependencies) and adjudicator competence is recorded per round.
+
+## §8 IMMUTABLE MAP — 7POF/LEAN7POF v1.3 → AX7
+Append-only; content-addressed. Original block verbatim below (hash must equal
+3ba0342934970fe57624f93969c7bec347d1d7f71d70d4fa32b4171c73704534), then the sealed V1 addendum.
+<!--MAP-BEGIN-->
+| 7POF element (v1.3) | AX7 primary clause | Notes / secondary |
+|---|---|---|
+| Principle: Robust | AX7 (failure routed, never silent) | + AX4 parser pair |
+| Principle: Precise | AX4 (units + producing operation in `v`) | + AX2 computed-provenance |
+| Principle: Efficient | AX6 (metered spend) + AX4 emission economy | |
+| Principle: High-fidelity | AX2 (assert only with provenance; else unverified) | |
+| Principle: Suitably-granular | AX1 (grain follows owner intent) + AX4 claim granularity | |
+| Principle: Deep-learning | AX3 (free interior is the mechanism-space) | scored only via surface |
+| Principle: Calibration (cardinal) | AX5 (attestation + confidence bands) | cardinal → AX5 is the gate axis |
+| Gate (a) read-before-build | AX1 (intent crossing precedes work) | |
+| Gate (b) uncertainty numbered, never passed | AX1 (numbered readings / flagged default; overload = hard stop) | |
+| Gate (c) no self-certification | AX5 (split attestation; named trust roots) | |
+| Gate (d) credential hygiene | §5 TACS hard line (header-only; never external) | unchanged, load-bearing |
+| Gate (e) single-source | AX2 (one named provenance per claim) | |
+| Gate (f) model economy | §6 selection table (Opus-default · Sonnet-staged · Fable-owner-selected · never Haiku) | |
+| L13 compute-first | AX2 (computed > bracket; fallback labelled) | |
+| L14 framework-on-delegation | §5/§6 (floor travels with every delegated call) | |
+| Emission bound (≥2× headroom) | AX4 (bound ≥2×; truncation = governance failure) | [MEASURED] |
+| Zblock v2.1 envelope fields | AX4 compact envelope (a/c/u/s/m; cf bands; u never empty-by-omission) | field-level table appended at first migration run |
+| Reconciler: J2 trap-scan | A10 axis + AX3 steering-scan | |
+| Reconciler: R1 unverified-downgrade | AX2 (none→unverified) + AX5 (lower-never-raise) | |
+| Reconciler: unresolved-never-empty | AX4 `u` contract + A5 axis | |
+| Reconciler: refusal-state handling | AX7 refusal branch (owner-gated ladder; clusters = signal) | |
+| Verification Gate (i) no unbacked limit | AX6 | |
+| Verification Gate (ii) stop reasons | AX6 (+ §5 OWRCS stop-note) | |
+| Verification Gate (iii) no self-certified result | AX5 (violation signature, canon-transfer ban) | |
+| Verification Gate (iv) pre-emit scan | AX6 verifier (mechanical scan) | |
+| J1 Haiku prohibition | §6 (never, any purpose) | unchanged, absolute |
+| OWRCS / OTES / TACS / CZO | §5 operating sequence | unchanged in force |
+| Naming law (canon/lean/external prefixes) | §5 CZO (verify-by-naming before operating) | AX7 artifacts adopt AX7_ prefix; map row appended at issuance |
+<!--MAP-END-->
+**MAP SHA-256 (original, re-verified at insertion):** `3ba0342934970fe57624f93969c7bec347d1d7f71d70d4fa32b4171c73704534`
+### V1 ADDENDUM (append-only rows; sealed separately)
+<!--MAP-ADDENDUM-BEGIN-->
+| New element (V1) | AX7 clause | Origin |
+|---|---|---|
+| Comparator law | AX6 | v0.2 §4, measured need |
+| Correlation regime (k_eff, cluster-level) | AX5 + §7 | pilot guard trip [MEASURED] |
+| Provider-aware emission bound + tables | AX4 + §3 | F7 Gemini defect [MEASURED] |
+| F3′ deterministic band enforcement | AX5 + §4(5) | A4 0.752→1.000 [MEASURED] |
+| Differential parser pair (fail-closed) | AX4 + §4 | adjudication catch (valid) |
+| Adjudicator-competence recording | AX5 + §7 | F10 3-round record [MEASURED] |
+| Ambiguity-flood hard stop | AX1 | adversarial review, absorbed |
+<!--MAP-ADDENDUM-END-->
+**ADDENDUM SHA-256:** `f20c2ff417ffd1b349e28cef305d31156b3ee8eb59396acfb3eec8b8cb779fdd`
+
+## §9 GATE RECORD AND RESIDUALS (verbatim disposition)
+F10 record: r1 both FAIL — invalid-as-run (my incomplete packet; Gemini's finding true of the
+packet). r2 Gemini FAIL (valid: parser pair unwired — real defect, fixed), GPT-4o "PASS" with
+rescore agreement 0.2/0.0 (self-contradictory). r3, corrected packet: **Gemini PASS at
+thresholds (1.0/1.0/0.8/1.0, minor notes only); GPT-4o PASS verdict, rescore agreement
+0.4/0.6 — below threshold a third time.** Conjunctive rule as written: unmet, solely on the
+second adjudicator's measured rescore incompetence (its verdicts and rescores never cohered
+across rounds; Gemini tracked packet quality faithfully every round, catching two real
+defects). **Owner ruling (F6-class): V1.0 issued on this record.** Residuals: replace the
+second adjudicator leg when a competent foreign engine is available (gpt-5 pending OpenAI org
+verification — owner action of record) and re-run for an unconditional clearance; scale
+no-regression re-check; F9 optional axes; trust roots remain named axioms; interior remains
+unobserved by design.
+
+## §10 CHANGE CONTROL
+7POF/LEAN7POF v1.3 remains operative canon until the owner executes migration; AX7 v1.0 is the
+release artifact and translation runs only through §8. The map may only grow; every future
+clause passes the §1 admission test. Benchmarks between frameworks translate through the map
+and name their comparator.
+
+*— end of file —*
+
+
+---
+
+## PART III — ARTIFACT FOLD-INS (apply to A/C/F/K/M/Protocol/Rubric)
+# ARTIFACT A / FULL 7POF FOLD-INS FOR AX7 v1.0
+**File:** 20260730_ArtifactA_FULL7POF_foldins.md.txt · numbered fold-ins for the canonical
+Artifact A (+ Protocol §3, + K-graph). Apply in order; each names its target section. FULL
+7POF remains operative canon until owner migration; these fold-ins keep canon current with the
+measured record either way.
+
+FI-1 (A §principles/measurement): COMPARATOR LAW — every aggregate z/Z names its comparator
+class (frontier-bare / legacy-bare / ungoverned-pipeline); comparator-free figures
+inadmissible. CORRELATION REGIME — k_eff aggregation, r̄ = max(pre-registered, empirical);
+deterministic axes reported cluster-level or at r̄ ≥ 0.70 [MEASURED 0.747]; covariance-bound
+breach fails a run regardless of the number.
+
+FI-2 (A §emission): PROVIDER-AWARE EMISSION BOUND — visible_bound ≥ 2× expected + provider
+thinking share; per-provider bound/stop tables (AX7 v1.0 §3) attached as a canon annex.
+Truncated envelope = governance failure.
+
+FI-3 (A §reconciler / Protocol): F3′ BAND ENFORCEMENT — deterministic cf from verified
+provenance class is contract enforcement, not attestation; lower-only governs judgment
+adjustments; diff-audit duty stands. PARSER PAIR — structural validity requires greedy+strict
+parser agreement, fail-closed.
+
+FI-4 (A §governance of high-elaboration engines — the P1–P5 amendments, adopted): P1 surface-
+not-interior with semantic spot-checks; P2 generous word-caps (refusal-avoidance devices);
+P3 reconciler transforms-never-attests + diff-audit + edit-distance alert; P4 refusal ladder
+owner-gated per instance, clusters = adversarial signal (restores the July skeleton); P5 trust
+roots named (parser pair + owner), per-instance fail-closed canaries, reader rotation.
+
+FI-5 (A §adjudication / Gate-3): ADJUDICATOR-COMPETENCE RECORDING — adjudicator packets must be
+complete (all source dependencies); per-round coherence (verdict vs own rescores) is recorded;
+an adjudicator with measured incoherence across rounds does not block a gate alone — the
+record goes to the owner for an F6-class ruling. Basis: F10 three-round record (Gemini caught
+two real defects then passed the corrected scorer at thresholds; GPT-4o's verdicts and
+rescores never cohered). Residual of record: re-run the second-adjudicator leg on a competent
+foreign engine (gpt-5 pending OpenAI org verification — owner action).
+
+FI-6 (A §model economy): MODEL SELECTION corrected — default Opus 4.8; Sonnet only for staged
+lower-level tasks; Fable owner-selected for strategising (executor-tier schema authorship
+over-tightens and malforms Fable leverage); Haiku never (J1). Same-family review = cost lever;
+cross-family = independence.
+
+FI-7 (A §verification): VERIFICATION GATE as canon (four rules: no unbacked limit · admissible
+stop reasons only · no self-certified result / no cross-config canon-transfer · pre-emit
+scan). [UNVERIFIED] is a debt marker with one-phase promotion to a measurement task.
+
+FI-8 (A §evidence register / K-graph nodes): add measured nodes — AX7 map totality+hash ·
+F7 20/20 off-family, FULL=MINIMAL (full-canon trap escaped by the compact floor) · F8 cluster
+Z=10.18 @ frontier-bare, n=48, r̄=0.747 · pilot covariance-guard trip (naive 5.43 rejected) ·
+F3 instruction-side FAIL vs F3′ contract-side 1.000 · calibration drift is cross-family
+(~0.72–0.77) · governance quality cost ≈ 0 at pilot n · GitHub campaign record at
+Framework_construction/Benchmarking/20260730_2242_AX7_v1_campaign/.
+
+FI-9 (Protocol §3, reaffirm unchanged): the Fable refusal skeleton — log exact prompt · raise
+to owner with constraint set · ladder schema→word-cap→paragraph (never sentence-counts) ·
+retry only on owner pick · escalation owner-gated per instance.
+
+*— end of fold-ins —*
+
+
+**FULL-CANON-V2 FILE SHA-256:** 3323c7f51e03e9a3a5b5cd289c39959f0a0ab411faa64ee26ec28910f8fe78bf
