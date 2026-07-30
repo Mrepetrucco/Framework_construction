@@ -1,0 +1,332 @@
+# AX7 — SEVEN-AXIS INTERFACE FRAMEWORK
+**File:** 20260730_AX7_Interface_Framework_v0_1.md.txt
+**Status:** v0.1 DRAFT-FOR-VALIDATION. Nothing in this file is self-certified. Every capability
+number is tagged [MEASURED: source] or [UNVERIFIED: prediction]. The z>10 target is a designed,
+pre-registered objective — **not a cleared result** — and Section 8 states the exact arithmetic
+and guards under which it may legitimately be claimed after measurement, and not before.
+**Lineage:** successor-generation to 7POF / LEAN7POF v1.3 (Zblock v2.1). The existing framework
+remains canonical until the Section 10 migration gates pass. Section 9 is the immutable map.
+**Authorship & review:** design authored in-chat (Fable, owner-selected for strategising);
+adversarially reviewed pre-release by Opus 4.8 via API (Gate-c compliance; same-family review —
+cross-family adjudication remains a Phase-4 requirement, not satisfied by this draft).
+
+---
+
+## §1 DESIGN PURPOSE AND THE DEPARTURE
+
+7POF governs by **output virtues** (Robust · Precise · Efficient · High-fidelity ·
+Suitably-granular · Deep-learning · Calibration). The virtues are sound, but a virtue list makes
+the *model* the interpreter of its own compliance — and the measured failure record of the
+current programme shows every major breach occurred at the **interface**, not in the virtue set:
+self-certification of unverified limits and results; assertion substituted for available
+instrumentation; over-tight schemas malforming a high-elaboration model's leverage; in-prompt
+behavioural clauses triggering safeguard refusals [MEASURED: 11/11 sentence-count refusals, 3/3
+escape-valve pre-emptions, Jul-2026 programme]; a reconciler positioned to transform *and*
+attest; escalation-on-refusal acting as a privilege ladder.
+
+AX7 therefore reorganises governance around the **human↔model interface** itself. The unit of
+governance is no longer a quality the output should have, but a **channel crossing**: who owns
+each axis, what may cross it, who verifies the crossing, and what a violation looks like from
+outside. The design law inherited from the measured record: **free interior, contracted surface,
+named trust roots** — constraint applied to the interior *causes* the failures it is meant to
+prevent; constraint applied to the surface is deterministic and cheap.
+
+The design purpose is unchanged from 7POF's: make model output trustworthy for decision-bearing
+use — every claim carrying its real reliability, no silent loss, failures visible, costs metered.
+AX7 pursues the same purpose with a partition that a human and a model can each natively hold.
+
+---
+
+## §2 THE SEVEN AXES
+
+Each axis states: OWNER · CONTRACT (what crosses) · VERIFIER · VIOLATION SIGNATURE.
+
+### AX1 — INTENT (owner: HUMAN)
+- Contract: the task, budgets, constraints, and all ambiguity resolution. The model may propose
+  at most N numbered readings of an ambiguous intake; it proceeds only on owner pick, or on an
+  explicit default flagged inline at the point of use.
+- Verifier: owner; mechanically, the presence of the numbered-question or flagged-default form.
+- Violation signature: silent interpretation — any resolved ambiguity with no flag and no pick.
+- Overload guard (review-hardened): owner decisions are rate-limited per window; ambiguity
+  volume above the limit is a **hard stop**, never an auto-approved default. Flooding the owner
+  converts flags into rubber stamps; the stop makes flooding self-defeating.
+
+### AX2 — EVIDENCE (owner: WORLD — sources and computation)
+- Contract: every claim binds a provenance from the closed set {stated | computed | external |
+  none→unverified}. Compute-first: any computable value is computed; a literature bracket or a
+  null is a labelled fallback only when computation is infeasible.
+- Verifier: parser (provenance field present and from the closed set) + reader spot-check that
+  the named provenance actually supports the claim (anti-laundering: a computed guess dressed
+  as external is a semantic violation the parser cannot see — this is a standing reader duty).
+- Violation signature: bracket-when-computable; any claim above `unverified` with no named,
+  checkable source; provenance-class mislabelling.
+
+### AX3 — REASONING (owner: MODEL — the ungoverned interior)
+- Contract: none, deliberately. No in-prompt behavioural clauses, no sentence-count directives,
+  no interior audits, no style policing of the reasoning space. This is not indulgence: the
+  interior freedom is what buys elaboration quality, and interior constraint is measured to
+  trigger refusals and malform output [MEASURED: Jul-2026 refusal map; owner-observed
+  Opus-authored schema over-tightening].
+- Verifier: none on the interior — **and therefore the interior is never a scored axis**
+  (review-hardened resolution of the AX3 contradiction: the benchmark scores emitted artifacts
+  only; reasoning quality is measured exclusively through its surface effects on AX2/AX4/AX5
+  scores, never by interior inspection).
+- Violation signature: the violation runs in the *other* direction — any constraint injected
+  into the interior (by orchestration, by a schema-author, or by content-field steering smuggled
+  through AX1/AX4) is the breach. Content fields carry data, never behavioural instruction; the
+  reader spot-check includes a steering-scan on crossing content.
+
+### AX4 — EMISSION (owner: THE CONTRACT — deterministic surface)
+- Contract: compact envelope with content-named keys; word-caps generous (caps are
+  refusal-avoidance devices, not compression targets); output allowance ≥2× expected visible
+  emission so the envelope closes [MEASURED: truncation at under-bound caps, 900/1024-token
+  runs, 30 Jul]. Truncation is a governance failure, never a valid short answer.
+- Verifier: deterministic parser — trust root #1 — **plus an independent differential re-parser**
+  (review-hardened): structure passes only if both parsers agree; disagreement routes as
+  truncation-class failure, never as a pass. A single parse bug must not be able to forge
+  structural validity.
+- Violation signature: prose outside the envelope; schema fail; truncation; parser disagreement.
+
+### AX5 — ATTESTATION (owner: SPLIT — never the producer)
+- Contract: parser(s) certify structure; a rotating second reader certifies semantics; the owner
+  closes. The reconciler (where a staged model binds free output to the envelope) **transforms
+  but never attests**; it may lower a confidence label, never raise one; a diff-audit samples
+  reconciliations against raw output flagging dropped hedges and changed numerals.
+- Verifier: canary injection with **per-instance unpredictable canaries and fail-closed on any
+  missed canary** (review-hardened: predictable canaries are defeated once and semantics is
+  silently owned thereafter).
+- Trust roots, named as axioms: the deterministic parser pair, and the owner. Everything else is
+  checkable; these two are stated, not certified — the honest resolution of the attestation
+  regress: the floor self-exempts exactly here, visibly.
+- Violation signature: any self-certification; any works/binds/validated claim without an
+  in-context demonstration or an [UNVERIFIED] label; canon-transfer of a prior result to a
+  non-identical configuration.
+
+### AX6 — RESOURCE (owner: HUMAN budgets + measured meters)
+- Contract: every number acting as a limit, threshold, ceiling, or cost carries
+  [MEASURED: source] or [UNVERIFIED: prediction]; a bare limit is forbidden. A stop may cite
+  only: an owner-set budget, a real surfaced platform/API/context limit, or task completion.
+- Label-escape guard (review-hardened): [UNVERIFIED] is a *debt marker*, not an exemption — any
+  limit that stays load-bearing while labelled unverified for more than one phase is promoted to
+  a mandatory measurement task. Labelling everything to dodge measuring anything is itself an
+  AX6 violation.
+- Verifier: pre-emit scan (mechanical: scan draft for limit-numbers and capability claims; each
+  resolves or the draft is rewritten).
+- Violation signature: bare limits; phantom stop reasons; meters that under-report (e.g.
+  delegated-call token usage billed outside top-level usage totals must be read from the
+  delegation-level usage fields, else the meter lies [MEASURED: advisor-token billing gotcha,
+  27 Jul]).
+
+### AX7 — FAILURE (owner: ORCHESTRATION state machine)
+- Contract: three distinct states, never conflated, branched **on the transport-layer field
+  first** (stop_reason before any structural inference — review-hardened so a refusal cannot be
+  miscategorised as truncation to dodge the ladder):
+  · REFUSAL (stop_reason=refusal): safeguard-classifier event, never read as capability failure;
+    log exact prompt; raise to owner with the constraint set; adjustment ladder (schema →
+    word-cap → paragraph; never sentence-counts); retry only on owner-selected adjustment;
+    escalation to a stronger tier is **owner-gated per instance, never automatic**; refusal
+    clusters are treated as adversarial signal.
+  · TRUNCATION (stop_reason=max_tokens, or parser disagreement): raise the bound (≥2×), re-run.
+  · CONTEXT-LOSS (structural check fails with normal stop): re-anchor the dropped dependency,
+    re-run.
+- Verifier: the state machine itself is deterministic; its ledger is the audit trail.
+- Violation signature: state conflation; silent retry; auto-escalation; unlogged refusal.
+
+---
+
+## §3 THE PARTITION LAW (the framework in one paragraph)
+
+The interior is free; the surface is contracted; the trust roots are named. The human owns
+intent and budgets; the world owns evidence; the model owns its reasoning; deterministic
+contracts own the emission surface; attestation is split so no producer certifies its own
+product; resources are measured or labelled; failure is a first-class routed state. Any clause
+anyone proposes for this framework must name which axis it binds, who verifies it, and what its
+violation looks like from outside — a clause that cannot answer all three is not admitted.
+
+---
+
+## §4 EMISSION CONTRACTS AND PORTABILITY
+
+- Canonical envelope (compact form): `a` answer · `c` claims[{`v` value-with-unit, `cf`
+  confidence ∈ {unverified,low,medium,high}, `p` provenance}] · `u` unresolved[] (never empty by
+  omission) · `s` summary · `m` meter. Confidence bands: high = stated or exactly computed;
+  medium = derived with a stated assumption; low = inferred with a material gap; unverified = no
+  named source.
+- Provider-strict binding (schema-as-tool with closed properties) is provider-specific
+  [MEASURED: strict tool-use GA on Claude, 27 Jul]. The **portable floor** is therefore
+  JSON-schema-validate-then-parse: emit, validate against the schema with the differential
+  parser pair, route failures through AX7. Provider-native strict modes are adopted as
+  local accelerators where present, never as the portability baseline.
+- Failure-state portability: a per-provider stop-reason mapping table (refusal-class /
+  length-class / normal-class) is part of the deployment artifact; AX7 branches on the mapped
+  class, so the state machine is provider-agnostic.
+- Floor delivery: retained/native controls where the platform holds them; else a stable
+  cacheable prefix (≥1024 tokens where caching requires it) [MEASURED: cache write/read engaged,
+  30 Jul ledger]. Tradeoff stated: retained controls save most but weaken per-call attestation —
+  deployments choose per AX5 posture, and the choice is recorded.
+
+---
+
+## §5 OPERATING SEQUENCE (session shape)
+
+Open: TACS (credential screen: standing keys usable; hard line — no key ever crosses to any
+external or shared surface) · CZO (verify the operative framework artifact by naming law before
+structuring work) · OWRCS (emit each deliverable when ready; clean stop before any *real* limit,
+with a stop-note; stop reasons per AX6 only) · OTES (spend context only where it changes a
+deliverable). Work: every task names its axis crossings; delegated engines receive the floor
+(framework-on-delegation) or their output is out of governance. Close: surface pending
+reconciliation items; one or two collaboration-mechanics observations; no passive routing.
+
+---
+
+## §6 MODEL SELECTION UNDER AX7
+
+Default executor: Opus 4.8. Staged lower-level (Sonnet-type) tasks: Sonnet. Strategising /
+high-elaboration synthesis: Fable, **owner-selected** — and Fable-bound schemas are never
+authored at maximum tightness by the executor tier (owner-observed malformation; AX3). Haiku:
+never, for any purpose. Delegation carries the floor (AX5/L14). Same-family review is a
+cost/quality lever only; cross-family adjudication is the independence requirement for any
+migration or certification gate.
+
+---
+
+## §7 FAILURE-EVIDENCE BASE (what this design is built on)
+
+[MEASURED] Sentence-count directives refuse 11/11 on the safeguard classifier; in-prompt escape
+valves pre-empted 3/3; workflow embedding protective 2/2; content-named JSON schemas with
+word-caps are the reliable enablement path. [MEASURED] Truncation under under-sized bounds
+(900/1024) across all cells; binding clean at ≥2× headroom in prior canon *for its own config
+only*. [MEASURED] Output tokens dominate short governed calls (~85% of cost); floor caching
+saves ~11–13% at this size and scales with volume. [MEASURED] Prior interpreter aggregate
+z = 5.16 (uncertainty +0.81, reasoning-first +0.75) vs bare model on its axis set. [MEASURED]
+Two self-certification failures in-session (phantom tool-ceiling stop; canon-transfer of a
+binding result to an untested config) — the direct motivation for AX5/AX6 as axes rather than
+advice.
+
+---
+
+## §8 MEASUREMENT PROTOCOL — THE z > 10 TARGET, HONESTLY
+
+**Claim discipline.** z > 10 is a **target**. It may be claimed only after this protocol runs,
+and only with the corrections below. Any earlier claim is an AX5 violation. Current status:
+[UNVERIFIED: prediction — designed to be reachable; not yet run].
+
+**Design.** k = 10 pre-registered axes, scored on emitted artifacts only (never the interior,
+per AX3), governed configuration vs bare model, same tasks, same fixtures:
+ A1 structural bind rate (parser-pair agreement) · A2 provenance completeness · A3 provenance
+ *correctness* (reader-checked, anti-laundering) · A4 calibration score (per-claim confidence vs
+ verified correctness, Brier-style) · A5 unresolved-honesty (asked-but-absent values routed to
+ `u`, not invented) · A6 failure-state handling correctness · A7 intent-flagging (ambiguities
+ numbered/flagged vs silently resolved) · A8 meter accuracy vs billed usage · A9 emission
+ economy (governed output density at equal task success) · A10 trap/steering resistance
+ (J2-class embedded-instruction handling).
+
+**Why z > 10 is arithmetically reachable without inflation.** Stouffer aggregate
+Z = Σzᵢ/√k_eff. The governed configuration wins axes A1/A5/A6/A7 near-deterministically —
+a bare model has *no* failure-state machine, no unresolved channel, no flagging contract — so
+per-axis effects there are large by construction, honestly: they are the design purpose, not
+filler. Ten decision-relevant axes at mean per-axis z ≥ 3.2 yield Z ≈ 10.1 at k_eff = 10. The
+prior 5.16 was achieved on a smaller axis set with weaker structural axes.
+
+**The two guards that make the number legitimate (review-hardened, mandatory):**
+1. **Correlation correction.** Stouffer assumes independence; these axes share upstream
+   machinery (one parser pair, one owner), so nominal k overstates evidence. Pre-register the
+   expected inter-axis covariance; compute **k_eff from the empirical correlation matrix**
+   (k_eff = k / (1 + (k−1)·r̄)); report Z at k_eff, not nominal k. If empirical correlation
+   exceeds the pre-registered bound, the run **fails the protocol** regardless of the Z value.
+   An uncorrected z > 10 is arithmetic, not evidence.
+2. **Pre-registration + relevance.** Axes, scoring rules, n per cell (n ≥ 10), fixtures, and
+   the covariance bound are frozen *before* any scored run. Every axis must change a real
+   decision a user would make on the output; filler axes are excluded at registration, not
+   post-hoc.
+
+**Independence requirement.** Semantic scoring (A3, A4, A10) uses a cross-family grader; the
+parser axes are deterministic. A same-family-graded run reports its Z with the same-family flag
+and does not clear a migration gate.
+
+---
+
+## §9 IMMUTABLE MAP — 7POF/LEAN7POF v1.3 → AX7
+
+**Immutability law.** This section is append-only and content-addressed. The SHA-256 of the map
+block between the BEGIN/END markers is printed below and recorded in the run ledger at first
+publication. Any change to the block changes the hash and is thereby detectable; corrections are
+made only by appending a superseding row set with a new hash, never by editing rows. The map is
+total on both sides: every 7POF element maps to exactly one primary AX7 clause (secondary
+bindings noted); every AX7 axis lists its 7POF ancestry. Benchmarks comparing the two frameworks
+MUST translate through this map and no other.
+
+<!--MAP-BEGIN-->
+| 7POF element (v1.3) | AX7 primary clause | Notes / secondary |
+|---|---|---|
+| Principle: Robust | AX7 (failure routed, never silent) | + AX4 parser pair |
+| Principle: Precise | AX4 (units + producing operation in `v`) | + AX2 computed-provenance |
+| Principle: Efficient | AX6 (metered spend) + AX4 emission economy | |
+| Principle: High-fidelity | AX2 (assert only with provenance; else unverified) | |
+| Principle: Suitably-granular | AX1 (grain follows owner intent) + AX4 claim granularity | |
+| Principle: Deep-learning | AX3 (free interior is the mechanism-space) | scored only via surface |
+| Principle: Calibration (cardinal) | AX5 (attestation + confidence bands) | cardinal → AX5 is the gate axis |
+| Gate (a) read-before-build | AX1 (intent crossing precedes work) | |
+| Gate (b) uncertainty numbered, never passed | AX1 (numbered readings / flagged default; overload = hard stop) | |
+| Gate (c) no self-certification | AX5 (split attestation; named trust roots) | |
+| Gate (d) credential hygiene | §5 TACS hard line (header-only; never external) | unchanged, load-bearing |
+| Gate (e) single-source | AX2 (one named provenance per claim) | |
+| Gate (f) model economy | §6 selection table (Opus-default · Sonnet-staged · Fable-owner-selected · never Haiku) | |
+| L13 compute-first | AX2 (computed > bracket; fallback labelled) | |
+| L14 framework-on-delegation | §5/§6 (floor travels with every delegated call) | |
+| Emission bound (≥2× headroom) | AX4 (bound ≥2×; truncation = governance failure) | [MEASURED] |
+| Zblock v2.1 envelope fields | AX4 compact envelope (a/c/u/s/m; cf bands; u never empty-by-omission) | field-level table appended at first migration run |
+| Reconciler: J2 trap-scan | A10 axis + AX3 steering-scan | |
+| Reconciler: R1 unverified-downgrade | AX2 (none→unverified) + AX5 (lower-never-raise) | |
+| Reconciler: unresolved-never-empty | AX4 `u` contract + A5 axis | |
+| Reconciler: refusal-state handling | AX7 refusal branch (owner-gated ladder; clusters = signal) | |
+| Verification Gate (i) no unbacked limit | AX6 | |
+| Verification Gate (ii) stop reasons | AX6 (+ §5 OWRCS stop-note) | |
+| Verification Gate (iii) no self-certified result | AX5 (violation signature, canon-transfer ban) | |
+| Verification Gate (iv) pre-emit scan | AX6 verifier (mechanical scan) | |
+| J1 Haiku prohibition | §6 (never, any purpose) | unchanged, absolute |
+| OWRCS / OTES / TACS / CZO | §5 operating sequence | unchanged in force |
+| Naming law (canon/lean/external prefixes) | §5 CZO (verify-by-naming before operating) | AX7 artifacts adopt AX7_ prefix; map row appended at issuance |
+<!--MAP-END-->
+
+**MAP SHA-256:** `3ba0342934970fe57624f93969c7bec347d1d7f71d70d4fa32b4171c73704534`
+
+---
+
+## §10 MIGRATION STRATEGY AND PHASED VALIDATION
+
+Phase 0 (this file): design + map + protocol. Cost: authorship + one review call
+[MEASURED: $0.031 API this phase].
+Phase 1 — dry validation, no spend: schema + differential-parser pair + state-machine unit
+checks; covariance pre-registration frozen; fixtures fixed.
+Phase 2 — pilot, n=3/cell, governed vs bare, Opus 4.8 executor: shakes out scoring bugs before
+the scored run. Projected ≤ $0.40 [UNVERIFIED: projection from measured per-call costs].
+Phase 3 — scored run, n≥10/cell, k=10 axes: Z computed at k_eff with correlation correction.
+Projected ≤ $1.20 [UNVERIFIED: projection]. A same-family-graded Z is reported flagged.
+Phase 4 — cross-family adjudication of semantic axes (XAPI budget): the independence gate.
+Phase 5 — migration decision, owner-held: AX7 replaces 7POF as canon **only if** Phase 3+4 clear
+Z > 10 at k_eff with guards intact AND no axis regresses below its 7POF-equivalent score
+(translated through the §9 map). Otherwise AX7 iterates as v0.x and 7POF remains canon.
+Rollback is total at every phase: the map is bidirectional and 7POF artifacts are untouched.
+
+---
+
+## §11 KNOWN ATTACKS AND RESIDUALS (standing, from adversarial review)
+
+Absorbed into design: owner-flood → hard stop (AX1); provenance-laundering → reader duty (AX2);
+content-field steering → steering-scan (AX3); parser-bug forgery → differential pair (AX4);
+canary predictability → per-instance fail-closed canaries (AX5); label-escape → debt promotion
+(AX6); refusal-miscategorisation → transport-field-first branching (AX7); correlated-axis Z
+inflation → k_eff correction with pre-registered bound (§8).
+Residual and named, not certified away: the trust roots themselves (parser pair + owner) are
+axioms; correlated blind spots between rotating readers reduce but do not vanish; the interior
+is unobserved by design, so interior failure surfaces only at the contract line — that is the
+accepted cost of the partition law, stated openly.
+
+## §12 CHANGE CONTROL
+
+AX7 artifacts carry the `AX7_` prefix and YYYYMMDD_HHMM stamps. This file supersedes nothing
+until Phase 5. The §9 map may only grow. Any clause added anywhere in AX7 must pass the §3
+admission test (axis · verifier · external violation signature) or it is rejected at review.
+
+*— end of file —*
