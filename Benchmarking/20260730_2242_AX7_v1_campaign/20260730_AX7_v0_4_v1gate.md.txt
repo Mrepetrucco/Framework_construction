@@ -1,0 +1,100 @@
+# AX7 — F3′/F10 RESULTS AND V1 GATE DECISION (v0.4)
+**File:** 20260730_AX7_v0_4_v1gate.md.txt
+**Extends:** v0.1 (design + immutable map, SHA-256 3ba03429…3534), v0.2 (pilot Z=3.02,
+protocol-fail caught), v0.3 (F7 cross-engine pass 20/20; F8 cluster Z=10.18 cleared).
+**Claim discipline:** MEASURED-with-source or UNVERIFIED, throughout.
+
+---
+
+## §1 THE OWNER'S QUESTION: ARE WE AT V1?
+
+**No — V1 is WITHHELD this turn, by the framework's own pre-registered rule.** The F10
+independence gate required BOTH cross-family adjudicators to pass the scorer (verdict PASS,
+per-axis agreement ≥0.8 within |Δ|≤0.15). Measured outcome [20260730_F10_adjudication.json]:
+
+| Adjudicator | Verdict | A1 | A2 | A3 | A4 | Divergences |
+|---|---|---|---|---|---|---|
+| gemini-3.1-pro | **PASS** | 1.0 | 1.0 | 1.0 | 1.0 | none |
+| gpt-4o | FAIL | 1.0 | 1.0 | 0.4 | 0.0 | 2 (one valid, one contested) |
+
+One adjudicator fully validated the scorer; one did not. The gate rule is conjunctive, so V1
+does not issue. Overruling GPT-4o post-hoc — even though its A4 reading contradicts the rules
+as written and its rescores disagree with both the deterministic scorer *and* Gemini — would be
+self-serving adjudication-of-the-adjudicator, the exact move AX5 forbids. The correct loop is
+fix → re-adjudicate, and the fix is already implemented (§4).
+
+**Consequence for scope:** the Artifact fold-ins and the LEAN7POF/LEAN7POF2 port packs are
+V1-gated deliverables and are therefore NOT issued this turn (contents frozen and listed in §6
+so they ship the moment F10 re-passes).
+
+## §2 F10 RECORD, INCLUDING MY OWN DEFECT
+
+Run 1 (invalid-as-run): both adjudicators FAILED the scorer — but the headline divergence
+(Gemini: "A1 never checks keys a/c/u/s") was true only of the audit packet I assembled: the
+a/c/u/s check lives in `env_parse`, whose source I omitted. An audit against an incomplete
+packet audits the packet. Logged as an AX5 process defect (mine), packet completeness is now a
+frozen F10 requirement.
+Run 2 (valid): complete source + tightened classifiable-set rules → the split verdict above.
+GPT-4o's surviving divergences: (a) **valid** — the single greedy-regex JSON extraction is a
+robustness fragility; this is the §11 differential-parser amendment left unimplemented, now
+closed (§4); (b) contested — its A4-countability reading contradicts the written rules; its
+own rescores (A4 agreement 0.0 while Gemini scored 1.0) are consistent with rule
+misapplication. Both preserved verbatim in the adjudication JSON; neither suppressed.
+
+## §3 F3′ — CALIBRATION CLOSED [MEASURED: 20260730_F3prime_result.json]
+
+Deterministic band enforcement (reconciler assigns cf from the verifiable value class:
+stated→high, computed-in-range→medium, other-numeric→unverified) measured on n=12 fresh
+governed envelopes: **A4 raw 0.752 → A4 reconciled 1.000.** The instruction-side F3 failed
+(v0.3); the contract-side F3′ fully closes the one weak governed axis — and cross-family
+evidence (F7: A4 ≈ 0.72–0.77 on GPT-4o and Gemini too) says this fix is portable, since the
+weakness is universal labelling drift, not a model property.
+**AX5 clause (adopted):** deterministic band assignment from a verified provenance class is
+*contract enforcement*, not attestation; the lower-only rule governs judgment-based
+adjustments. The reconciler still never attests, and the diff-audit duty stands.
+
+## §4 REMEDIATION IMPLEMENTED (for the F10 re-pass)
+
+The scorer now carries the differential parser pair required by v0.1 §AX4: parser 1 = greedy
+regex extraction (legacy), parser 2 = strict incremental `json.JSONDecoder.raw_decode` scan;
+**structure passes only on agreement**, disagreement routes as truncation-class failure.
+Verified offline on adversarial strings (multi-object text, trailing-brace prose, clean
+envelope) [MEASURED: unit checks in 20260730_AX7_pilot_benchmark.py r2]. Next-turn F10 re-run
+sends the parser-pair source in the complete packet.
+
+## §5 V1 CRITERIA — WHAT REMAINS (one item)
+
+Cleared to date [MEASURED]: map totality + hash integrity · F7 cross-engine (20/20, no
+LEAN/FULL split; AX4 provider-bound amendment adopted) · F8 deterministic-cluster Z=10.18 at
+named comparator · F3′ calibration closure · no-regression at pilot n · governance ≈ 0 quality
+cost. **Remaining: F10 conjunctive pass with the remediated parser-pair scorer.** On that
+single event, V1.0 issues and §6 ships.
+
+## §6 V1-GATED DELIVERABLES (frozen contents, ship on F10 re-pass)
+
+AX7 v1.0 consolidated file = v0.1 axes + partition law + these adopted amendments (AX4
+provider-aware emission bound + per-provider bound/stop tables · AX5 contract-enforcement
+clause + F3′ reconciler · AX6 comparator law · correlation regime) + measured evidence base +
+verbatim-sealed map with v1 addendum rows (append-only, new hash appended).
+LEAN7POF_ pack (canon-lean, single md.txt): verification gate → lean gate set · model-selection
+table · low-cost governed-op standard · AX4 provider bounds · F3′ reconciler step · refusal
+skeleton unchanged. LEAN7POF2_ pack (external, single md.txt): the same minus Claude-only
+accelerators (no strict-tools, no advisor), shim + provider tables as the floor — F7 measured
+that this projection binds foreign engines 20/20.
+Artifact A fold-ins: comparator law · correlation regime · AX4/AX5 amendments · P1–P5
+Fable-governance amendments · TACS/OWRCS clauses already in memory.
+
+## §7 BUDGETS THIS TURN [MEASURED]
+
+API ≈ $0.50 (F3′ $0.337 + spot-set regeneration ≈$0.16) → cumulative ≈ $5.38 of $7.00.
+XAPI cumulative: OpenAI ≈ $0.11, Gemini ≈ $0.14, of $2.50 each. OCSUL: owner ledger
+authoritative; this turn again bought measurement, not prose — and the gate held against the
+pressure to declare V1, which is the framework's value demonstrated on itself.
+
+## §8 CARRIED
+
+F10 re-run (remediated packet) → V1 decision · §6 ships on pass · scale no-regression re-check
+(owner option) · F9 optional axes · 2000-token bind [UNVERIFIED — one call confirms] · NMC
+bake-off pick · P5 condense · tool-ceiling FOLLOW-UP (standing, later turn).
+
+*— end of file —*
