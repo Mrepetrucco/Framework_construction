@@ -1,0 +1,51 @@
+# 7POF V2 — STATE MANIFEST
+**File:** 20260731_7POF_V2_STATE_MANIFEST.md.txt · authoritative index as of migration (31 Jul 2026).
+**Canon state:** _7POF_ V2 live · L7PV2 = standard operating · LEAN7POF2 V2 = external/portable.
+**Naming law:** active canon carries the V2 marker; any framework artifact WITHOUT it is SUPERSEDED
+→ halt on encounter and load the V2 file below. **Claim discipline:** MEASURED-with-source / UNVERIFIED.
+
+## 1. LIVE (V2) — newest versions and where they live
+| Artifact | Newest file | GitHub (Framework_construction) | Drive home |
+|---|---|---|---|
+| FULL canon _7POF_ V2 | 20260731__7POF__V2_FULL_CANON.md.txt (sha 3323c7f5…) | canon/20260730_2316_7POF_V2/ | objects/Canonical 1xeZRcFTCAffxpjeggFJP_wGxrVTeTEb7 |
+| Migration ruling | 20260731_7POF_V2_MIGRATION.md.txt | canon/20260730_2316_7POF_V2/ | objects/Canonical |
+| AX7 spine (V1.0 release, lineage) | 20260730_AX7_v1_0_CONSOLIDATED.md.txt | canon/…_7POF_V2/ + Benchmarking/…_AX7_V1_RELEASE/ | objects/Canonical |
+| Standard operating (lean) | 20260730_LEAN7POF_AX7_v1_update_pack.md.txt → L7PV2 | canon/…_7POF_V2/ | LEAN7POF 1eRJkqQ0Oc6ocMFg-6PwtUAgZQnT7Incr |
+| External/portable | 20260730_LEAN7POF2_AX7_v1_update_pack.md.txt | canon/…_7POF_V2/ | LEAN7POF folder |
+| Interpreter + plugin deltas | 20260730_Interpreter_Plugin_AX7_v1_updates.md.txt | canon/…_7POF_V2/ | Interpreters 1RF3CvhNQqy-E9_5w-GSuW7icmPTKdjyT |
+| Artifact fold-ins FI-1..9 | 20260730_ArtifactA_FULL7POF_foldins.md.txt | canon/…_7POF_V2/ | objects/Canonical (apply into A/C/F/K/M/Protocol/Rubric) |
+| This manifest | 20260731_7POF_V2_STATE_MANIFEST.md.txt | State/ (pushed) | State 1MldiCAmXN7FAsKDr6zk5xWlyTQy3sku0 |
+
+## 2. EVIDENCE (measured, immutable ledgers) — where the numbers live
+GitHub Framework_construction:
+· Benchmarking/20260730_2242_AX7_v1_campaign/ (F7 ledger, F8 ledger, F10 adjudication, F3′ result, pilot benchmark)
+· Benchmarking/20260730_2301_AX7_V1_RELEASE/ (v0.1–v0.4 files, F10 r2/r3, spotset, scorer)
+Drive: Benchmarking 1WYpeEpEcEmv1oBDzpSOsYJ_iKDEhRav9 (place the same ledgers for the Drive index).
+Headline measured: F7 20/20 off-family (FULL=MINIMAL, trap escaped) · F8 cluster Z=10.18 @ frontier-bare n=48 r̄=0.747 · F3′ A4 0.752→1.000 · map hash 3ba03429…/addendum f20c2ff4…
+
+## 3. SUPERSEDED → ARCHIVE STATUS
+The following are no longer operative; retained for lineage/rollback ONLY. On encounter, do NOT operate
+from them — load the §1 V2 file for that role instead.
+| Superseded artifact | Was | Replaced by (§1) |
+|---|---|---|
+| 7POF / LEAN7POF v1.3 (all v1.x) | prior operative canon | _7POF_ V2 FULL CANON / L7PV2 |
+| LEAN7POF2 v1.2–v1.3 | prior external edition | LEAN7POF2 V2 pack |
+| LEAN7POF2_External_Edition_v1_3.md (Drive 1E7kUVf8brjPSSBP3vxoWdU-H0yoos931) | external floor | LEAN7POF2 V2 pack |
+| AX7 v0.1 / v0.2 / v0.3 / v0.4 | pre-release iterations | AX7 v1.0 (folded into FULL V2) |
+| Zblock v2.1 as sole schema | rich schema only | compact envelope (wire) + Zblock v2.1 (rich); 1:1 map |
+| Plugin v1.0.0 / v1.0.1 / v1.0.2 | prior browser plugin | v1.0.3 changelist (Interpreter+plugin deltas) |
+| Interpreter SKILL v1.0 | prior interpreter def | interpreter delta v1.1 |
+| Prior state manifests (…_state_md.txt, 20260726_0615, PORT_ACROSS v1/v2) | session state snapshots | this manifest |
+Archive action for owner (Claude has no Drive move/delete tool): move the above Drive files to an
+`_ARCHIVE_v1x/` subfolder under their current parent, or tag title `[SUPERSEDED_V2]`; GitHub copies stay
+in place as immutable history (dated folders are already lineage).
+
+## 4. RESIDUALS CARRIED (non-blocking; V2 operates now)
+F10 second-adjudicator clean re-run (unblocks on gpt-5 via OpenAI org verification — owner action) ·
+scale no-regression re-check · F9 optional deterministic axes · 2000-token bind [UNVERIFIED — one call
+confirms] · tool-ceiling FOLLOW-UP (later turn, standing) · NMC bake-off config pick.
+
+## 5. CREDENTIAL / PUSH NOTE
+Pushes use Github_key3.env (Contents:write CONFIRMED on all 3 repos, header-only, never committed).
+envs/github.env token returned 403 this campaign — stale/rotated; key3 is the working push credential.
+Rotation owner-scheduled (R-e); hard line intact (no key to any external/shared surface).
