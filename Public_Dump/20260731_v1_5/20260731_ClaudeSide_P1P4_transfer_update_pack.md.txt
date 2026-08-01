@@ -1,0 +1,46 @@
+# CLAUDE-SIDE TRANSFER UPDATE PACK — P1–P4 CROSS-ENGINE LEARNINGS
+File: 20260731_ClaudeSide_P1P4_transfer_update_pack.md.txt · STAGED (NOT yet applied) · fold NEXT turn with other considerations.
+Basis: the 31 Jul live cross-engine fitness run — the three external pack files (Custom Instruction · LEAN7POF2 V2 v1.5 · Artifact A AX7-integrated rev 2) were sent to the two available non-Claude flagships. Both bound the canonical envelope on first attempt [MEASURED: GPT-5.6 Sol status=completed, in=12237/out=1477(reasoning=378), $0.1055; Gemini 3.1 Pro Preview finishReason=STOP, prompt=12807/candidates=342/thoughts=889, ~$0.0404 (rate est.)]. The learnings below transfer to Claude-based operation even though the test engines were non-Claude.
+Naming law reminder for the fold: canon=_7POF_ · lean=LEAN7POF_ (V2) · external=LEAN7POF2_ (V2). Apply each clause to its named target; each carries a MEASURED/UNVERIFIED tag; UNVERIFIED items include a one-step validation to run at fold time.
+
+## POINTERS BY TARGET
+
+UP-1 → FULL (_7POF_ : Zblock Schema v2.1 + Artifact A + Artifact K)
+  (a) SINGLE-SOURCE THE WIRE SHAPE. The canonical wire schema v2.x (response_type/answer/claims/unresolved/summary/meter; a/c/u/s compact alias) is now the single source in LEAN7POF2 V2 v1.5 and referenced by Artifact A §3/§0.1 (FI-10). Reconcile Zblock Schema v2.1 (Claude strict tool-use input_schema, additionalProperties:false, all-props-required) to the SAME shape — confirm `meter` is a first-class field in the strict schema and that no internal artifact still emits a bare a/c/u/s without the normaliser. [Defect class P1; MEASURED it bit a foreign engine, [UNVERIFIED] whether the Claude strict schema already carries meter — validate against Objects/Zblock_v2_1_strict.json next turn.]
+  (b) FAILURE TAXONOMY. Adopt the expanded set {normal,length,refusal,context-loss,transport-retry,config-error} into the Protocol §3 / failure annex; preserve raw native metadata then classify. Anthropic native mapping [UNVERIFIED — confirm vs Anthropic docs next turn]: stop_reason end_turn→normal · max_tokens→length · refusal→refusal · tool_use→normal(tool); HTTP 529 overloaded_error→transport-retry; 404/unresolved-id→config-error.
+  (c) K-GRAPH NODE. Add the 31 Jul cross-engine bind result (both flagships bound v2.x on first attempt; 404 bad-id + 503 transport handled outside the failure triad; per-provider cap accounting confirmed) to Artifact K. [MEASURED]
+
+UP-2 → LEAN7POFV2 (LEAN7POF_ V2, Claude-side lean md.txt projection — current Drive core: 20260722_1206_LEAN7POF_core_v1_2.md.txt, needs the V2/AX7 uplift)
+  (a) Uplift the lean core to V2/AX7 and reference the canonical wire schema (single source), so the Claude lean and the external L2P2V2 share ONE wire shape (edition-map single-source). [P1]
+  (b) Record the CAP-ACCOUNTING split as an L-clause: Claude extended thinking is SEPARATE-BUDGET (budget_tokens distinct; max_tokens must exceed thinking budget + visible) — the same class as Gemini 3.x, opposite to OpenAI shared-cap. [UNVERIFIED — confirm Claude thinking-token accounting vs Anthropic docs next turn.]
+  (c) Two binding modes (M-native = emit_zblock tool / strict tool use; M-prompt = plain-JSON floor) named symmetrically with L2P2V2. [P3]
+
+UP-3 → L2P2V2 (LEAN7POF2_ V2 external — ALREADY at v1.5 this turn)
+  Reciprocal only: L2P2V2 v1.5 is the CURRENT single source of the canonical wire schema + native provider tables + two modes. FULL and LEAN7POFV2 reconcile TO it, not the reverse. No further external edit needed until FULL/LEAN alignment lands. [MEASURED]
+
+UP-4 → Interpreters (interpreter_agent.py / interpreter_agent_v2 / Claude_only7POF_int — GitHub Interpreter_Agent repo)
+  (a) MODEL-ID VERIFY: add a ListModels/id-resolution probe before any run; treat GA-vs-preview naming as provider-specific (proven: gemini-3.1-pro 404, gemini-3.1-pro-preview served). A 200 is not a capability. [MEASURED P4]
+  (b) PER-PROVIDER CAPABILITY REGISTRY: cap-accounting (shared vs separate), JSON mode (json_schema / responseSchema / emit_zblock tool), param allow-list (omit deprecated Gemini 3.x temperature/top_p/top_k). Fail-closed on unknown support. [P2/P4]
+  (c) COST METER: read usage per provider correctly — OpenAI reasoning tokens live in output_tokens; Gemini thoughtsTokenCount is separate; Anthropic input/output(+cache); advisor tool must read usage.iterations or it under-reports (standing finding). [MEASURED]
+  (d) FAILURE HANDLER: adopt the six-class taxonomy incl. transport-retry (bounded backoff + fallback chain) and config-error. [P2]
+
+UP-5 → plain_interpreters (plain_interpreter.py, Gemini-backed keyless floor — Public_Dump)
+  (a) CORRECT THE EMISSION GUARD: MIN_CAP/truncation guard must treat maxOutputTokens as VISIBLE-ONLY on Gemini 3.x (thinking is separate; thoughtsTokenCount billed apart; cannot disable on 3.x Pro) — the prior "thinking shares the cap" assumption was wrong. [MEASURED this turn: candidates=342 with thoughts=889 under one 4000 cap.]
+  (b) Carry the M-prompt floor + differential parser pair verbatim from L2P2V2 v1.5; the parser pair runs OUTSIDE the model. [P1/P3]
+  (c) transport-retry class for the 503-UNAVAILABLE / high-demand case observed this turn. [MEASURED]
+
+UP-6 → plugin (two MV3 browser plugins: Claude-API plugin + keyless P-c2; v1.0.3 changelist)
+  (a) REFUSAL/STATE PANEL: expand from a single refusal panel to the six-class taxonomy (distinct panels/badges for refusal · length · context-loss · transport-retry · config-error · normal); preserve raw native finish/stop metadata. [P2]
+  (b) SELECTOR: keep default opus-4-8, Fable listed, NO Haiku; ADD an id-resolution check on selection (grey out / warn on non-resolving id) and a binding-mode toggle (M-native/M-prompt). [P3/P4]
+  (c) COST METER: per-provider usage read as in UP-4(c); cache-token line retained; header-only key. [MEASURED]
+
+## COMBINE NEXT TURN (other considerations to fold alongside — do NOT fold this pack in isolation)
+- Standing FOLLOW-UP: empirically define the per-turn tool-call ceiling (search all chats for limit-hit turns) and fold the number into the OWRCS tool-budget clean-stop rule.
+- R-f accumulation (key-gated, one chunked turn): tool-schema re-validation, supermemory re-poll (+key), interior-equilibrium instrument (~$0.05), n=5 cross-engine lift, GPT xhigh cap rerun, GitHub push of the agent package.
+- Full n>=5/cell bake-off (Sonnet5/Opus4.8/Opus5/Fable5, NO Haiku) once a real NMC fixture + max_tokens>=2000 are set.
+- Consistency-on-edit + owner-ratification pass required before any of UP-1..UP-6 binds canon.
+
+*Staged pack · P1–P4 Claude-side transfer · 31 Jul 2026 · targets FULL · LEAN7POFV2 · L2P2V2 · Interpreters · plain_interpreters · plugin · NOT applied — fold next turn with the combine-list above.*
+
+## CHANGE-NEED LOG (logged 31 Jul 2026 — NOT yet applied; fold with UP-1..UP-6)
+CN-1 SOFTEN THE OWRCS pause_turn RULE. pause_turn is RECOVERABLE (Continue resumes cleanly, counter resets) — it is NOT a context-loss limit, so the currently-encoded "clean-stop with a stop-note BEFORE the pause" is too strong. Change it to SOFT operational guidance: no mandatory clean-stop for pause_turn; only soft-manage (structure work toward a clean boundary, or simply accept the Continue) WHEN a turn genuinely needs a lot of tool interaction. Keep the ~10-server-tool-iteration figure as awareness, not a stop trigger. Targets: Artifact A §0 OWRCS + FI-10 taxonomy note · LEAN7POF2V2 failure machine · Custom Instruction §1 OWRCS · memory. Owner directive 31 Jul 2026.
