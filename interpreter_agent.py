@@ -1,89 +1,57 @@
 #!/usr/bin/env python3
-"""LEAN7POF Interpreter Agent — portable launcher.
-
-Run from any computer. Pulls the agent definition from the private GitHub repo
-(Interpreter_Agent) and runs a governed, parse-guaranteed call against the
-Anthropic API. NO secrets are stored in this file — both are read from env:
-
-    export ANTHROPIC_API_KEY=...     # your Anthropic key
-    export GITHUB_TOKEN=...          # fine-grained PAT with Contents:read on the repo
-
-Usage:
-    python interpreter_agent.py "your task here"
-    python interpreter_agent.py "explain gradient descent for a Y10 class" --model claude-haiku-4-5-20251001
-    echo "task" | python interpreter_agent.py -    # read task from stdin
+"""LEAN7POF Interpreter Agent (v1, merged 20260801) — single-shot governed launcher on the shared AX7 module.
+In-place merge fixing: Haiku default -> claude-opus-4-8 (J1); blocking call -> non-blocking module;
+short schema -> CANON_SCHEMA (P1); pause_turn -> loop-continuation. For the agentic tool loop use interpreter_agent_v2.0.py.
+Usage: python interpreter_agent.py "task" [--model claude-opus-4-8]
 """
 import os, sys, json, base64, argparse, urllib.request, urllib.error
+try:
+    from ax7_provider_module import CANON_SCHEMA, parse_pair, classify_anthropic, call_nonblocking
+except ImportError:
+    raise SystemExit("[l7p] ax7_provider_module.py must be importable (co-locate it)")
 
-REPO = os.environ.get("L7P_REPO", "Mrepetrucco/Interpreter_Agent")
-SYS_FILE = os.environ.get("L7P_SYS", "LEAN7POF_system.md")
-DEFAULT_MODEL = "claude-haiku-4-5-20251001"
+REPO = os.environ.get("L7P_REPO", "Mrepetrucco/Framework_construction")
+SYS_FILE = os.environ.get("L7P_SYS", "Public_Dump/20260731_v1_5/LEAN7POFV2_v2.0.md.txt")
+DEFAULT_MODEL = "claude-opus-4-8"                                  # J1: never Haiku
 
-ZSCHEMA = {
-    "type": "object",
-    "properties": {
-        "answer": {"type": "string"},
-        "claims": {"type": "array", "items": {"type": "object", "properties": {
-            "text": {"type": "string"},
-            "confidence": {"type": "string", "enum": ["unverified", "low", "medium", "high"]},
-            "provenance": {"type": "string"}},
-            "required": ["text", "confidence", "provenance"]}},
-        "unresolved": {"type": "array", "items": {"type": "string"}},
-        "summary": {"type": "string"},
-    },
-    "required": ["answer", "claims", "unresolved", "summary"],
-}
-
-def _req(url, data=None, headers=None, method="GET"):
-    r = urllib.request.Request(url, data=data, headers=headers or {}, method=method)
+def load_system(gh):
+    u = f"https://api.github.com/repos/{REPO}/contents/{SYS_FILE}"
+    req = urllib.request.Request(u, headers={"Authorization": "Bearer " + gh, "User-Agent": "l7p", "Accept": "application/vnd.github+json"})
     try:
-        with urllib.request.urlopen(r, timeout=90) as x:
-            return x.status, x.read()
-    except urllib.error.HTTPError as e:
-        return e.code, e.read()
-
-def load_system(gh_token):
-    """Fetch the agent system prompt from the private repo via the Contents API."""
-    url = f"https://api.github.com/repos/{REPO}/contents/{SYS_FILE}"
-    s, body = _req(url, headers={"Authorization": "Bearer " + gh_token,
-                                 "User-Agent": "l7p-agent",
-                                 "Accept": "application/vnd.github+json"})
-    if s != 200:
-        raise SystemExit(f"[l7p] could not fetch {SYS_FILE} from {REPO} (HTTP {s}). "
-                         f"Check GITHUB_TOKEN has Contents:read on the repo.")
-    return base64.b64decode(json.loads(body)["content"]).decode("utf-8")
+        with urllib.request.urlopen(req, timeout=30) as x:
+            return base64.b64decode(json.loads(x.read())["content"]).decode("utf-8")
+    except urllib.error.HTTPError:
+        raw = f"https://raw.githubusercontent.com/{REPO}/main/{SYS_FILE}"
+        with urllib.request.urlopen(raw, timeout=30) as x:
+            return x.read().decode("utf-8")
 
 def run(task, model):
-    ak = os.environ.get("ANTHROPIC_API_KEY")
-    gh = os.environ.get("GITHUB_TOKEN")
-    if not ak or not gh:
-        raise SystemExit("[l7p] set ANTHROPIC_API_KEY and GITHUB_TOKEN in your environment.")
-    system = load_system(gh)
-    payload = {
-        "model": model, "max_tokens": 1500, "system": system,
-        "tools": [{"name": "emit_zblock", "description": "Emit the governed LEAN7POF Z block.",
-                   "input_schema": ZSCHEMA}],
-        "tool_choice": {"type": "tool", "name": "emit_zblock"},
-        "messages": [{"role": "user", "content": task}],
-    }
-    s, body = _req("https://api.anthropic.com/v1/messages",
-                   data=json.dumps(payload).encode(),
-                   headers={"x-api-key": ak, "anthropic-version": "2023-06-01",
-                            "content-type": "application/json"}, method="POST")
-    if s != 200:
-        raise SystemExit(f"[l7p] Anthropic API HTTP {s}: {body[:300].decode('utf-8','ignore')}")
-    resp = json.loads(body)
-    tu = [b for b in resp.get("content", []) if b.get("type") == "tool_use"]
-    out = tu[0]["input"] if tu else {"error": "no tool_use block", "raw": resp}
-    u = resp.get("usage", {})
-    out["_meta"] = {"model": model, "stop_reason": resp.get("stop_reason"),
-                    "tokens": {"in": u.get("input_tokens"), "out": u.get("output_tokens")}}
-    return out
+    key = os.environ.get("ANTHROPIC_API_KEY"); gh = os.environ.get("GITHUB_TOKEN", "")
+    if not key: return {"answer": "", "claims": [], "unresolved": ["set ANTHROPIC_API_KEY"], "summary": ""}
+    system = load_system(gh) + "\n\n# Runtime\nEmit the governed canonical Z block via emit_zblock. pause_turn is recoverable — continue through it."
+    tool = {"name": "emit_zblock", "description": "Emit the final governed canonical Z block.", "input_schema": CANON_SCHEMA}
+    hdr = {"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"}
+    msgs = [{"role": "user", "content": task}]
+    for _ in range(6):                                            # bounded; pause_turn continues the loop
+        body = {"model": model, "max_tokens": 2000, "system": system, "tools": [tool],
+                "tool_choice": {"type": "tool", "name": "emit_zblock"}, "messages": msgs}
+        r = call_nonblocking("https://api.anthropic.com/v1/messages", hdr, body)   # NON-BLOCKING
+        if r["class"] != "normal":
+            return {"answer": "", "claims": [], "unresolved": [f"{r['class']}: {r.get('http')}"], "summary": "provider non-normal"}
+        resp = json.loads(r["raw"])
+        for b in resp.get("content", []):
+            if b.get("type") == "tool_use" and b.get("name") == "emit_zblock":
+                out = b["input"]; ok, _ = parse_pair(json.dumps(out))
+                out["_meta"] = {"parse_pair_ok": ok, "stop": resp.get("stop_reason"), "usage": resp.get("usage", {})}
+                return out
+        if classify_anthropic(resp) == "loop-continuation":       # pause_turn
+            msgs.append({"role": "assistant", "content": resp.get("content", [])}); continue
+        return {"answer": "", "claims": [], "unresolved": ["no emit_zblock"], "summary": ""}
+    return {"answer": "", "claims": [], "unresolved": ["max turns"], "summary": ""}
 
 if __name__ == "__main__":
-    ap = argparse.ArgumentParser(description="LEAN7POF Interpreter Agent launcher")
-    ap.add_argument("task", help="the task, or '-' to read from stdin")
-    ap.add_argument("--model", default=DEFAULT_MODEL)
+    ap = argparse.ArgumentParser()
+    ap.add_argument("task"); ap.add_argument("--model", default=DEFAULT_MODEL)     # never Haiku
     a = ap.parse_args()
     task = sys.stdin.read() if a.task == "-" else a.task
     print(json.dumps(run(task, a.model), indent=2, ensure_ascii=False))
