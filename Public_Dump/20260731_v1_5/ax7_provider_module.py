@@ -158,6 +158,13 @@ def gemini_call(key, prompt, system, mode="m-prompt", model="gemini-3.1-pro-prev
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     return call_nonblocking(url, hdr, body)
 
+def classify_anthropic(d):
+    """Anthropic Messages stop_reason -> class. pause_turn is a LOOP-CONTINUATION (UP1), not a failure."""
+    sr = d.get("stop_reason")
+    return {"end_turn": "normal", "stop_sequence": "normal", "tool_use": "normal",
+            "max_tokens": "length", "model_context_window_exceeded": "length",
+            "refusal": "refusal", "pause_turn": "loop-continuation"}.get(sr, "context-loss")
+
 # ============================ LIVE SELF-TEST ============================
 if __name__ == "__main__":
     K = {}
