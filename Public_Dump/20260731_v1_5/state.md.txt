@@ -1,0 +1,28 @@
+# 7POF V2 / AX7 — STATE SNAPSHOT
+Date: 31 Jul 2026 (end of turn) · owner: Enrico
+
+## Canonical file set (current, in /mnt/user-data/outputs)
+- Custom_Instruction_L7PV2_external.md.txt — external orchestration brief · rev 2 + CN-1
+- LEAN7POF2V2.md.txt — L2PV2 external portable floor · v1.5 (AX7 spine + P1–P4 + UP1-amend)
+- Artifact_A_AX7_integrated.md.txt — Claude-side canon · rev 2 (FI-1…FI-10) + UP1-amend + CN-1
+- ax7_provider_module.py — UP4/5/6 non-blocking provider module + AX7 binding (live-verified)
+- UP4_5_6_module_spec.md.txt — module completion spec
+- 20260731_ClaudeSide_P1P4_transfer_update_pack.md.txt — fold-in log (UP-1…UP-6 + CN-1 log)
+- zbinding_test_plan.md.txt — lowest-cost z-binding comparison plan
+- state.md.txt — this file
+
+## Applied this turn
+- UP1 (amended): pause-continue removed from the failure-class set; re-placed as a recoverable LOOP-CONTINUATION (Anthropic pause_turn only) in Artifact A FI-10 + LEAN7POF2V2 failure machine + memory.
+- UP3: reciprocal (L2PV2 is source of truth) — no edit.
+- CN-1: OWRCS pause_turn rule softened (no mandatory clean-stop; recoverable, non-blocking) in Artifact A §0 + Custom Instruction §1 + memory.
+- UP4/UP5/UP6: non-blocking provider module + AX7 binding schema BUILT & LIVE-VERIFIED (OpenAI gpt-5.6-sol + Gemini 3.1-pro-preview, M-native, parse_pair_ok=TRUE, $0.0023 / $0.0067).
+
+## Pending (next turn / owner)
+- UP2: uplift LEAN7POFV2 (Claude-side lean core, currently Drive core v1.2) to V2/AX7 — needs the Drive source fetched.
+- In-place merge of ax7_provider_module.py into legacy interpreter_agent.py / plain_interpreter.py / plugin source (on GitHub, not in workspace).
+- Owner ratification of the Artifact A edits (consistency-on-edit pass run this turn — clean).
+- Sync: Drive held v1.4 / FI-1..9 (one rev behind); push this turn brings it current (see push log).
+
+## Verification posture
+- All limit/cost figures carry [MEASURED: source] or are flagged estimate/variable.
+- pause_turn ceiling: documented default 10 server-tool iterations; web band ≈10–20 (observed, variable). Recoverable — not context-loss.
