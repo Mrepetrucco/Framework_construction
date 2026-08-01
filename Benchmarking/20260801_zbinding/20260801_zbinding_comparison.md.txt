@@ -1,0 +1,30 @@
+# Z-BINDING COMPARISON — AX7 vs LPV2 vs L2PV2 vs L2PV1.3
+Date: 20260801 · engine: OpenAI gpt-5.6-sol · mode: M-prompt (instruction-only, so the EDITION determines binding, not provider enforcement) · n=5 per edition · bind = differential parser pair agrees on the CURRENT canonical envelope (incl. `meter`).
+
+## Edition results (system block = the edition)
+| edition   | size (chars) | z-bind | mean input tok | mean out tok | mean $/call |
+|-----------|-------------:|:------:|---------------:|-------------:|------------:|
+| AX7 spine | 650          | 5/5    | 244            | 75           | $0.00347    |
+| LPV2      | 5,154        | 5/5    | 1,348          | 125          | $0.01048    |
+| L2PV2     | 13,062       | 5/5    | 3,234          | 244          | $0.02349    |
+| L2PV1.3   | 4,376        | 0/5    | 1,145          | 174          | $0.01094    |
+
+## Read-out
+- **Lowest-cost reliable z-binding: AX7 spine** — 5/5 bind at $0.0035/call (≈3× cheaper than LPV2, ≈6.8× cheaper than L2PV2). If the goal is only a valid governed envelope, the minimal AX7 spine is the cost-optimal system block.
+- **LPV2 and L2PV2 also bind 5/5**; cost scales with edition size (input tokens dominate the delta). L2PV2 buys the full governance surface (native provider tables, two modes, R1–R7, amends) at ~2.2× LPV2 cost — justified when that surface is needed, not for bare binding.
+- **L2PV1.3 fails the CURRENT canonical binding 0/5** — its Z projection predates the P1/`meter` reconciliation, so its output lacks `meter` and is rejected by the current parser pair. This is a genuine backward-incompatibility (exactly what P1 fixed), not a model failure. [Caveat: the bind criterion is the current schema incl. `meter`; the task requested `meter`, which v1.3's schema doesn't define.]
+- Ranking (lowest-cost valid z-binding): **AX7 < LPV2 < L2PV2**; L2PV1.3 non-binding under the current schema.
+
+## "z > 10" note
+A z-SCORE >10 governance metric (F8-style cluster z) needs the full rubric harness (see zbinding_test_plan.md, 16 cells × n≥5). This run reports the practical binding rate + cost; n=5 binary all-or-nothing gives no meaningful z — report raw counts (R2). AX7/LPV2/L2PV2 = 5/5; L2PV1.3 = 0/5.
+
+## Interpreters — comparable? YES
+Both interpreters force `emit_zblock` via the Anthropic tool schema (M-native, guaranteed-parse), so both bind by construction — comparable on cost, not bind-rate (both parse_pair_ok=TRUE):
+| interpreter | input tok | out tok | ~$ (opus 5/25) | role |
+|-------------|----------:|--------:|---------------:|------|
+| interpreter_agent.py (v1) | 3,003 | 625 | ~$0.031 | single-shot governed emit |
+| interpreter_agent_v2.0.py | 5,587 | 924 | ~$0.051 | agentic (tools: search/file loop) |
+Both J1-clean (opus default). v1 is cheaper for simple governed answers; v2.0 carries the tool loop for multi-step work. Choose by task, not by binding (both guaranteed).
+
+## Cost this run
+~$0.24 OpenAI (20 calls) + ~$0.08 Anthropic (2 interpreter runs) ≈ $0.32; each call < $1.00. [MEASURED]
