@@ -1,0 +1,40 @@
+# TEST PLAN — LOWEST-COST Z BINDING COMPARISON
+Objective: determine which framework edition, when installed as the system/instruction block, produces a VALID zblock (canonical AX7 envelope, parse_pair_ok=TRUE) at the LOWEST cost — trading binding reliability against the input-token cost of loading the edition.
+
+## Editions under test (independent variable = the system block)
+1. AX7 — the AX7 binding spine only (canonical schema + the seven axes; minimal). Smallest input.
+2. LEAN7POFV2 (LPV2) — the new Claude-side lean V2 (post UP2 uplift). Lean.
+3. L2PV2 — LEAN7POF2 V2 external portable floor v1.5 (this turn). Fuller (P1–P4 + AX7 spine).
+4. L2PV1.x — the most up-to-date PRIOR external edition (v1.3/v1.4, pre-P1–P4). Baseline.
+Record each edition's input-token size (the cost driver) before the run.
+
+## Fixed factors
+- Engines: OpenAI gpt-5.6-sol (Responses) + Gemini 3.1-pro-preview (generateContent). Report per engine; do not pool across engines.
+- Binding mode: test BOTH M-native (provider-enforced) and M-prompt (plain-JSON) for each edition (mode is a second factor).
+- Task prompt: identical minimal "emit a valid zblock envelope" across all cells.
+- Bounds: max_output >= 2x expected; reasoning/thinking = low. Keep each call < $1.00 (XAPI).
+
+## Cells & replication
+- 4 editions x 2 engines x 2 modes = 16 cells. n >= 5 per cell (R2 banding floor); report raw counts if n<5.
+- Randomise cell order; verify each model id resolves before spend (ListModels); a 200 is not a capability.
+
+## Metrics (per cell)
+- BIND RATE: fraction with parse_pair_ok=TRUE (both differential parsers agree on a canonical/compact envelope).
+- INPUT COST: input_tokens x rate (OpenAI $5/M; Gemini ~$2/M est). This is the edition-size lever.
+- TOTAL COST: input + output(+reasoning/thoughts) x rate; report mean and spread.
+- CALIBRATION-ENFORCEMENT: fraction where deterministic band == provenance class after the Reconciler (contract check).
+- FAILURE MIX: {normal,length,refusal,transport-retry,config-error} counts (non-blocking module classes).
+
+## Analysis
+- Winner = lowest TOTAL COST among editions whose BIND RATE meets a pre-registered threshold (e.g. >= 0.95).
+- Aggregate deterministic axes at cluster level or r̄ >= 0.70; name the comparator class on every figure; comparator-free figures inadmissible.
+- Expected direction (hypothesis, [UNVERIFIED]): AX7-spine ~ lowest input cost but possibly lower bind reliability on weaker prompts; L2PV2 highest bind reliability at higher input cost; LPV2 the balance point; L2PV1.x baseline that should be beaten by L2PV2 on bind reliability (it carries the P1 defect).
+
+## Empirical anchor already in hand (31 Jul, canonical schema, M-native, minimal envelope)
+- OpenAI gpt-5.6-sol: parse_pair_ok=TRUE, cost $0.0023 [MEASURED].
+- Gemini 3.1-pro-preview: parse_pair_ok=TRUE, cost ~$0.0067 [MEASURED].
+These are the AX7-spine M-native lower-bound cost points; the full run extends them across editions and M-prompt.
+
+## Governance
+- Score EMITTED ARTIFACTS only (never the engine interior). Every cost/limit carries [MEASURED: source] or [UNVERIFIED].
+- Budget: 16 cells x n>=5 x 2 calls ~ chunked stable windows of <=6 synchronous calls per command with a per-call ledger append. Estimated total << $5 at observed per-call costs.
