@@ -1,0 +1,18 @@
+# UP4 / UP5 / UP6 — NON-BLOCKING PROVIDER MODULE + AX7 BINDING (completion spec)
+Artifact: ax7_provider_module.py · built + live-verified 31 Jul 2026 · reference implementation the Interpreters, plain_interpreter, and plugin adopt.
+Status: BUILT & LIVE-TESTED (this turn). In-place merge into legacy interpreter_agent.py / plain_interpreter.py / plugin source is the remaining owner/next-turn step (those sources are on GitHub, not in this workspace).
+
+## Amends satisfied
+- UP4 (Interpreters) — NON-BLOCKING SHAPE: call_nonblocking() returns a status dict and NEVER raises for transport/HTTP; 429/500/502/503/529 -> bounded backoff (<=2 retries) then a `transport-retry` status; 404 -> `config-error` (verify id / ListModels); the agent loop keeps control throughout. Foreign-provider failure set = {normal, length, refusal, transport-retry, config-error}.
+- UP1 amend CONTEXTUALISED: `pause-continue` is Anthropic-only (stop_reason "pause_turn"), a recoverable LOOP-CONTINUATION, not a failure — so it is ABSENT from the OpenAI/Gemini paths here. Only an Anthropic caller would carry the pause_turn continuation.
+- UP5 (plain_interpreter, Gemini floor) — same non-blocking contract; Gemini cap accounting correct (maxOutputTokens = visible only; thinkingConfig separate; thoughtsTokenCount billed apart); classify_gemini maps finishReason natively.
+- UP6 (binding modes) — M-prompt is the floor; M-native flips ON only where strict binding is critical for full model exploitation, and stays under the AX7 canonical schema. AX7 BINDING SCHEMA RECONCILED, TESTED, BUILT: CANON_SCHEMA (single source, long-key) -> openai_text_format() (json_schema, strict:true) and gemini_schema() (OpenAPI-subset, additionalProperties stripped). The differential parser pair is the cross-provider floor and runs OUTSIDE the producer.
+
+## Live self-test results (31 Jul 2026, XAPI < $1 each)
+- OpenAI gpt-5.6-sol · M-native · class=normal · parse_pair_ok=TRUE · all 6 canonical keys bound · cost $0.0023 [MEASURED].
+- Gemini 3.1-pro-preview · M-native · class=normal · parse_pair_ok=TRUE · all 6 canonical keys bound · cost ~$0.0067 (rate est.) [MEASURED].
+- Model IDs verified live before spend (gemini-3.1-pro-preview is the served flagship; gemini-3.1-pro 404s).
+
+## Integration notes (for the in-place merge)
+- Interpreters/plain_interpreter: replace ad-hoc provider calls with openai_call()/gemini_call(); route finish handling through classify_* + call_nonblocking; keep parse_pair as the emission gate.
+- plugin: expose a per-provider binding-mode toggle (default M-prompt; M-native where critical); read usage per provider for the cost meter; the failure/state panel uses the five foreign classes (+ Anthropic-only pause-continue on the Anthropic path).
