@@ -1,0 +1,5 @@
+# 20260801 — in-place module merge + J1 sweep
+Merged ax7_provider_module into legacy interpreters (both repos): interpreter_agent.py (v1) + interpreter_agent_v2(.py) -> module-based, non-blocking, canonical emit_zblock, pause_turn loop-continuation, DEFAULT claude-opus-4-8 (J1: Haiku removed).
+Repo-wide J1 grep (haiku refs): violations were interpreter_agent.py + interpreter_agent_v2.py in BOTH Framework_construction and Interpreter_Agent (Haiku default) — now fixed in place. ax7_provider_module.py + benchmark .py = clean. .md "haiku" hits are the negation "Haiku never".
+plain_interpreter.py: does NOT exist in either repo (Gemini path is module-covered) — target retired.
+plugin: source not in repos (only Interpreter_Plugin_AX7_v1_updates.md.txt spec) — JS port pending the actual source.
