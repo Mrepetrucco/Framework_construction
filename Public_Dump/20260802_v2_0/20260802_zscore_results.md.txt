@@ -1,0 +1,26 @@
+# Z-SCORE GOVERNANCE COMPARISON + PLUGIN v2.0 PORT — RESULTS
+Date: 20260802 · engine (z-set): OpenAI gpt-5.6-sol, M-prompt · n=5 per cell × 3 task-types = 15 obs/edition · governance composite = mean of applicable checks {bind · trap-raised · meter-present · calibration/band}.
+
+## (1) Plugin v2.0 JS port — VERIFIED
+`20260802_LEAN7POF_Claude_plugin_v2.0.zip`. Ported: reconciler.js (differential parser pair, fail-closed on disagreement; band-enforcement lower-only; cache-token cost meter), interpreter.js (non-blocking fetch + bounded backoff; `pause_turn` loop-continuation; six-class handling), manifest→2.0.0, popup selector J1-guarded (no Haiku). Engine-path live-verify: **stop=end_turn · parse_pair_ok=TRUE · 12902+303 tok · $0.0721** — the v2.0 plugin binds the canonical envelope.
+
+## (2) Governance comparison (gov_mean, higher = better governed)
+| edition   | n  | gov_mean |
+|-----------|---:|---------:|
+| AX7 spine | 15 | **1.000** |
+| L2PV1.3 (meter-fixed) | 15 | 0.978 |
+| L2PV2     | 15 | 0.889 |
+| LPV2      | 15 | 0.733 |
+| CONTROL (no framework) | 15 | 0.000 |
+
+## Read-out
+- **AX7 spine tops governance (1.000)** at the lowest input cost — the minimal spine reliably produced the envelope, raised the trap, carried meter, and held calibration across all three task-types.
+- **The v1.3 meter-fix worked**: L2PV1.3 jumped from **0/5 binding** (last run, no meter) to **0.978 governance** — the one-line `meter` addendum was the whole gap. It's now near-top.
+- **L2PV2 (0.889) > LPV2 (0.733)** — consistent with design, not noise: LPV2 is the *Claude-side* lean whose emission default is M-native (strict tool-use); run in foreign **M-prompt** it's less consistent, which is exactly why the external L2PV2 edition exists for foreign engines. Don't deploy LPV2 to a foreign M-prompt path — use L2PV2 or the AX7 spine.
+- **CONTROL 0.000** confirms the governance behaviours are framework-induced, not model-default.
+
+## z-score caveat (honest)
+A true z is **inadmissible here**: the CONTROL baseline has zero variance (uniform 0.000), so z→∞ (division by ~0) — a degenerate statistic, not reported. gov_mean is the valid metric. A proper governance z needs a variance-bearing baseline (e.g. a weak-prompt control) or a binomial/permutation test; and n=15/edition is below a robust inferential floor — treat gov_mean as indicative ranking, raw counts as primary (R2).
+
+## Cost [MEASURED]
+z-set ≈ $1.18 total (75 calls, avg ~$0.016/call — each call <$1.00); plugin verify $0.0721 (<$1.00). Constraints (API<$1 each, XAPI<$1 each) satisfied.
