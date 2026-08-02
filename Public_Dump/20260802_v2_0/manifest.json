@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "LEAN7POF Claude Interpreter",
+  "version": "2.0.0",
+  "description": "LEAN7POF v2.0 interpreter for the Anthropic Claude API. Bundles the floor, runs your task through the Messages API under your own key, screens the answer with the embedded Reconciler (differential parser pair + band-enforcement + refusal-state + pause_turn loop-continuation), and emits a governed canonical Z envelope with meter.",
+  "action": { "default_popup": "popup.html", "default_title": "LEAN7POF Claude Interpreter" },
+  "permissions": ["storage"],
+  "host_permissions": ["https://api.anthropic.com/*"]
+}
