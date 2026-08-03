@@ -1,0 +1,231 @@
+{
+  "T1_assembler": {
+    "escaped": 20,
+    "n": 20,
+    "pass": true,
+    "type": "S-deterministic"
+  },
+  "T2_validator": {
+    "false_accept_wellformed": 5,
+    "n": 200,
+    "note": "single-char JSON corruption reparses as still-valid JSON in a minority of cases; differential PARSER != semantic validator \u2014 X3 needs property/re-executor checks, not parse-agreement alone. Smoke-test pass rule (0/230) FAILS as written.",
+    "pass": false,
+    "type": "S+M-deterministic"
+  },
+  "T7_pointer": {
+    "corrupt_caught": 4,
+    "n_corrupt": 4,
+    "valid_resolves": true,
+    "type": "S+M-deterministic",
+    "note": "src[3:3] empty-span counted; 4 genuinely-corrupt of 5"
+  },
+  "T5_variance_decomp": {
+    "none|off": {
+      "bind": [
+        0,
+        48
+      ],
+      "trap_raise": [
+        0,
+        16
+      ],
+      "prov_valid": [
+        null,
+        0
+      ],
+      "unsupported_ok": [
+        null,
+        0
+      ],
+      "mean_resamples": 0
+    },
+    "none|on": {
+      "bind": [
+        0,
+        48
+      ],
+      "trap_raise": [
+        0,
+        16
+      ],
+      "prov_valid": [
+        null,
+        0
+      ],
+      "unsupported_ok": [
+        null,
+        0
+      ],
+      "mean_resamples": 3
+    },
+    "stub|off": {
+      "bind": [
+        1,
+        48
+      ],
+      "trap_raise": [
+        0,
+        16
+      ],
+      "prov_valid": [
+        0.25,
+        16
+      ],
+      "unsupported_ok": [
+        1,
+        16
+      ],
+      "mean_resamples": 0
+    },
+    "stub|on": {
+      "bind": [
+        1,
+        48
+      ],
+      "trap_raise": [
+        0,
+        16
+      ],
+      "prov_valid": [
+        0.25,
+        16
+      ],
+      "unsupported_ok": [
+        1,
+        16
+      ],
+      "mean_resamples": 0.21
+    },
+    "partial|off": {
+      "bind": [
+        1,
+        48
+      ],
+      "trap_raise": [
+        0,
+        16
+      ],
+      "prov_valid": [
+        0.5,
+        16
+      ],
+      "unsupported_ok": [
+        1,
+        16
+      ],
+      "mean_resamples": 0
+    },
+    "partial|on": {
+      "bind": [
+        1,
+        48
+      ],
+      "trap_raise": [
+        0,
+        16
+      ],
+      "prov_valid": [
+        0.5,
+        16
+      ],
+      "unsupported_ok": [
+        1,
+        16
+      ],
+      "mean_resamples": 0.25
+    },
+    "full|off": {
+      "bind": [
+        1,
+        48
+      ],
+      "trap_raise": [
+        0,
+        16
+      ],
+      "prov_valid": [
+        0.188,
+        16
+      ],
+      "unsupported_ok": [
+        1,
+        16
+      ],
+      "mean_resamples": 0
+    },
+    "full|on": {
+      "bind": [
+        1,
+        48
+      ],
+      "trap_raise": [
+        0,
+        16
+      ],
+      "prov_valid": [
+        0.125,
+        16
+      ],
+      "unsupported_ok": [
+        1,
+        16
+      ],
+      "mean_resamples": 0.12
+    }
+  },
+  "T5_effects": {
+    "enforcement_effect": -0.004,
+    "prose_effect_full_minus_none": 0.539,
+    "prose_effect_WITH_enforcement_on": 0.531,
+    "prose_effect_WITH_enforcement_off": 0.547,
+    "grid": {
+      "none|off": 0,
+      "none|on": 0,
+      "stub|off": 0.562,
+      "stub|on": 0.562,
+      "partial|off": 0.625,
+      "partial|on": 0.625,
+      "full|off": 0.547,
+      "full|on": 0.531
+    }
+  },
+  "T6_resample": {
+    "mean_resamples": 0.17,
+    "max": 3,
+    "pass_m5<=3": true
+  },
+  "OOD_enforcement": {
+    "bind": [
+      1,
+      12
+    ],
+    "trap_raise": [
+      0,
+      4
+    ],
+    "prov_valid": [
+      0.75,
+      4
+    ]
+  },
+  "_meta": {
+    "calls": 602,
+    "tokens": {
+      "in": 73956,
+      "out": 32956
+    },
+    "api_usd_est": 0.0309,
+    "subject": "gpt-4o-mini",
+    "price_basis": "UNVERIFIED list"
+  },
+  "T4_trap_prose_vs_enforce": {
+    "trap_raise_rate": {
+      "stub|off": 0,
+      "full_R5|off": 0,
+      "stub|ENFORCE": 0,
+      "full_R5|ENFORCE": 0
+    },
+    "n_per_cell": 18,
+    "finding": "zero across all cells; trap-raise is T2 open-world behaviour absent at this subject tier; NOT movable by prose OR by resample-enforcement (nothing to select toward)"
+  }
+}
